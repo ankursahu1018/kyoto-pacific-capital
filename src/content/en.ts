@@ -86,7 +86,7 @@ export const content = {
     approach: {
       title: "Our Approach",
       paragraph1: "We provide capital and expertise to companies with proven business models to accelerate their growth trajectories. We foster relationships of trust with management teams, sharing a long-term vision and business plan.",
-      paragraph2: "Our focus is on growth, both organic and inorganic—as the driver of value creation, rather than excessive leverage and short-term cash flow improvement. We work as co-entrepreneurs alongside management teams, leveraging our extensive experience in building and transforming businesses.",
+      paragraph2: "Our focus is on growth, both organic and inorganic, as the driver of value creation, rather than excessive leverage and short-term cash flow improvement. We work as co-entrepreneurs alongside management teams, leveraging our extensive experience in building and transforming businesses.",
       paragraph3: "We actively leverage technology, including data analytics and AI-driven digital transformation, to drive growth and profitability of portfolio companies.",
     },
     criteria: {
@@ -210,7 +210,7 @@ export const content = {
     subtitle: "Flexible capital meets focused expertise, tailored to the unique needs of each exceptional opportunity.",
     stages: {
       title: "Investment Stages",
-      description: "We invest across the growth spectrum, from seed through buyout—adapting our approach to match each opportunity's unique requirements.",
+      description: "We invest across the growth spectrum, from seed through buyout, adapting our approach to match each opportunity's unique requirements.",
       items: ["Seed & Early Stage", "Growth Capital", "Buyout & Control"],
     },
     geographies: {
