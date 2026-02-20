@@ -155,7 +155,7 @@ const Strategy = () => {
                 {sectors.map((sector) => (
                   <div
                     key={sector.title}
-                    className="rounded-xl border border-gold/15 bg-card/40 p-6 backdrop-blur-md transition-all duration-300 hover:border-gold/40 hover:shadow-[0_0_15px_rgba(197,165,90,0.15)]"                  >
+                    className="rounded-xl border border-gold/15 bg-card/40 p-6 backdrop-blur-md transition-all duration-300 hover:shadow-[0_0_20px_rgba(197,165,90,0.2)]">
                     <h3 className="text-lg font-display font-light text-gold mb-4">
                       {sector.title}
                     </h3>
@@ -168,8 +168,8 @@ const Strategy = () => {
             </GlassCard>
           </div>
         </div>
-      </section>
-    </Layout>
+      </section >
+    </Layout >
   );
 };
 
