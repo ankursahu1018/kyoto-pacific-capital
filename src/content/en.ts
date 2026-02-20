@@ -8,7 +8,7 @@ export const content = {
   },
   hero: {
     headline: "Partners for Capital, Intelligent Growth, Globalisation, and Strategic Innovation",
-    subheadline: "We partner with visionary leaders to scale breakthrough ideas into preeminent global companies working side by side as co-entrepreneurs and long-term allies",
+    subheadline: "We partner with visionary leaders to scale breakthrough ideas into preeminent global companies working side by side as co\u2011entrepreneurs and long-term allies",
     learnMore: "About Us",
   },
   home: {

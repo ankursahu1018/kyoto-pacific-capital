@@ -31,7 +31,7 @@
 - 技術革新 (Technological Innovation)
 
 **English Tagline:** 
-"We partner with visionary leaders to scale breakthrough ideas into preeminent global companies — working side by side as co-entrepreneurs and long-term allies"
+"We partner with visionary leaders to scale breakthrough ideas into preeminent global companies, working side by side as co-entrepreneurs and long-term allies"
 
 **Japanese Tagline:**
 「先見性あるリーダーと共に、革新的なアイデアを世界を代表する企業へと育てます。共同創業者として、長期的なパートナーとして、共に歩みます。」

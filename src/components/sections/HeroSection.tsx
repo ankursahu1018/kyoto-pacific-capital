@@ -15,7 +15,7 @@ export const HeroSection = () => {
   const rotatingWords = language === "jp"
     ? ["長期的資本形成", "戦略的成長", "グローバル展開", "技術革新"]
     : [
-      "Long term Capital",
+      "Long Term Capital",
       "Strategic Growth",
       "Globalization",
       "Technological Innovation",
@@ -96,11 +96,11 @@ export const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 lg:px-12">
         <div className="max-w-5xl mx-auto flex min-h-screen flex-col items-center text-center pt-[35vh] pb-[8vh]">
           <h1 className="font-display font-light leading-none animate-fade-up cursor-default w-full text-center">
-            <span className="block text-gold text-[3.5rem] md:text-[4.5rem] lg:text-[5rem]">
+            <span className="block text-gold text-[4rem] md:text-[5rem] lg:text-[5.5rem]">
               {language === "jp" ? "パートナー のために" : "Partners for"}
             </span>
             <span
-              className={`block text-gold text-[2.25rem] md:text-[3rem] lg:text-[3.5rem] mt-2 transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+              className={`block text-gold text-[2rem] md:text-[2.5rem] lg:text-[3rem] mt-2 transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
                 }`}
               style={{
                 textShadow: "0 0 10px rgba(212, 175, 55, 0.45)",
