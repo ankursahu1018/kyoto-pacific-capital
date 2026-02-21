@@ -361,7 +361,7 @@ const Experience = () => {
                 </p>
                 <p className="transition-colors duration-300 hover:text-gold">
                   {isJp
-                    ? "ゴールドマン・サックスまたはKPCのリード投資担当、個人投資家、取締役、戦略アドバイザーとしてアンカー・サフが関与した投資先を含みます。"
+                    ? "ゴールドマン・サックスまたはKPCのリード投資担当、個人投資家、取締役、戦略アドバイザーとしてアンクール・サフが関与した投資先を含みます。"
                     : "Includes investments where Ankur Sahu served as lead investor representative for Goldman Sachs or KPC, personal investor, board director, or strategic advisor."}
                 </p>
               </div>
