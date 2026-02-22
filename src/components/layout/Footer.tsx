@@ -17,7 +17,7 @@ export const Footer = () => {
                   京都<br />パシフィック<br />キャピタル
                 </span>
               ) : (
-                <img src={kpcLogoEn} alt="Kyoto Pacific Capital" className="h-10" />
+                <img src={kpcLogoEn} alt="Kyoto Pacific Capital logo" loading="lazy" className="h-10" />
               )}
             </Link>
             <p className="mt-4 text-base text-muted-foreground leading-relaxed max-w-md">

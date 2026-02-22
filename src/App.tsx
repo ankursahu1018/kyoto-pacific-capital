@@ -3,7 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LanguageProvider } from "@/contexts/LanguageContext";
+
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Bio from "./pages/Bio";
@@ -16,6 +16,8 @@ import Contact from "./pages/Contact";
 import Privacy from "./pages/legal/Privacy";
 import Terms from "./pages/legal/Terms";
 import Disclaimer from "./pages/legal/Disclaimer";
+import UniversalStudiosJapan from "./pages/case-studies/UniversalStudiosJapan";
+import ReNewPower from "./pages/case-studies/ReNewPower";
 
 const queryClient = new QueryClient();
 
@@ -31,6 +33,8 @@ const App = () => (
           <Route path="/company" element={<Company />} />
           <Route path="/founder" element={<Founder />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/case-studies/usj" element={<UniversalStudiosJapan />} />
+          <Route path="/case-studies/renew" element={<ReNewPower />} />
           <Route path="/strategy" element={<Strategy />} />
           <Route path="/investments" element={<Investments />} />
           <Route path="/contact" element={<Contact />} />

@@ -14,6 +14,7 @@ export const LanguageToggle = () => {
     <div className="flex items-center gap-0 rounded-lg border border-border overflow-hidden">
       <button
         type="button"
+        aria-label="Switch to English"
         onClick={(e) => {
           e.preventDefault();
           e.stopPropagation();
@@ -31,6 +32,7 @@ export const LanguageToggle = () => {
       <div className="w-px h-9 bg-border" />
       <button
         type="button"
+        aria-label="Switch to Japanese"
         onClick={(e) => {
           e.preventDefault();
           e.stopPropagation();

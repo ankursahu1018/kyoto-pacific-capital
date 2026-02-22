@@ -305,7 +305,8 @@ const Experience = () => {
                                 <div className="h-20 md:h-24 transition-transform duration-300 group-hover:scale-110 group-hover:shadow-gold-glow">
                                   <img
                                     src={company.logo}
-                                    alt={isJp ? company.jpName : company.name}
+                                    alt={`${isJp ? company.jpName : company.name} logo`}
+                                    loading="lazy"
                                     className={`h-full w-full object-contain ${isRenewPower
                                       ? "p-[6px]"
                                       : isTightPadding
@@ -338,6 +339,7 @@ const Experience = () => {
                   </div>
                 </div>
               ))}
+
               <div className="text-sm text-muted-foreground space-y-2">
                 <p>{isJp ? "★ = 現在の投資先" : "★ = Current investment"}</p>
                 <p>

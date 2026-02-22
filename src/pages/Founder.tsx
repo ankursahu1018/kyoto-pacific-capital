@@ -50,7 +50,8 @@ const Founder = () => {
                                     <div className="w-full h-full rounded-2xl overflow-hidden border border-gold/30 bg-[hsl(271,70%,14%)]/80">
                                         <img
                                             src={ankurPhoto}
-                                            alt="Ankur Sahu"
+                                            alt="Ankur Sahu - Founder & Managing Partner of Kyoto Pacific Capital"
+                                            loading="lazy"
                                             className="w-full h-full object-cover"
                                         />
                                     </div>

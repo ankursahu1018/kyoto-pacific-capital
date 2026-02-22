@@ -7,13 +7,13 @@ const Privacy = () => {
 
   return (
     <Layout>
-      <section className="pb-24 min-h-screen pt-24">
+      <section className="pb-24 min-h-screen pt-32 md:pt-36">
         <div className="container mx-auto px-6 lg:px-12">
           <article className="max-w-5xl mx-auto">
             {isJp ? (
               <>
                 <p className="text-xl text-muted-foreground mb-6">
-                  最終更新日：2026年1月
+                  最終更新日：2026年2月
                 </p>
                 <h1 className="text-4xl md:text-5xl font-display font-light text-gold mb-10">
                   プライバシーポリシー
@@ -78,7 +78,7 @@ const Privacy = () => {
             ) : (
               <>
                 <p className="text-xl text-muted-foreground mb-6">
-                  Last updated: January 2026
+                  Last updated: February 2026
                 </p>
 
                 <h1 className="text-4xl md:text-5xl font-display font-light text-gold mb-10">

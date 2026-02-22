@@ -27,9 +27,10 @@ const Bio = () => {
             <div className="lg:col-span-2 animate-fade-up flex justify-center lg:justify-start">
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full p-1 bg-gradient-to-br from-primary via-primary/80 to-primary/60 shadow-gold-glow">
                 <div className="w-full h-full rounded-full overflow-hidden">
-                  <img 
-                    src={ankurPhoto} 
-                    alt="Ankur Sahu - Founder & Managing Partner" 
+                  <img
+                    src={ankurPhoto}
+                    alt="Ankur Sahu - Founder & Managing Partner"
+                    loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                   />
                 </div>
