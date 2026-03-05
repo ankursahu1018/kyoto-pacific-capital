@@ -24,31 +24,31 @@
   /* DARK MODE (default) - Background: #1E1A3A warm deep purple */
   .dark, :root {
     --background: 248 38% 16%;
-    --foreground: 260 29% 92%;
+    --foreground: 0 0% 100%;
 
     /* Cards: #252048 - slightly lighter than background */
     --card: 248 39% 20%;
-    --card-foreground: 260 29% 92%;
+    --card-foreground: 0 0% 100%;
 
     --popover: 248 38% 18%;
-    --popover-foreground: 260 29% 92%;
+    --popover-foreground: 0 0% 100%;
 
     /* Gold buttons: #C9A84C */
     --primary: 44 54% 54%;
     --primary-foreground: 248 38% 16%;
 
     --secondary: 248 36% 24%;
-    --secondary-foreground: 260 29% 92%;
+    --secondary-foreground: 0 0% 100%;
 
-    /* Muted text: #A89CC8 */
+    /* Muted text: pure white to match foreground */
     --muted: 248 36% 22%;
-    --muted-foreground: 256 28% 70%;
+    --muted-foreground: 0 0% 100%;
 
     --accent: 45 55% 62%;
     --accent-foreground: 248 38% 16%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 260 29% 92%;
+    --destructive-foreground: 0 0% 100%;
 
     /* Border: #3D3468 */
     --border: 250 33% 31%;
@@ -61,7 +61,7 @@
     /* Glass Variables - blend with background */
     --glass-bg: 248 39% 20% / 0.9;
     --glass-border: 250 33% 31%;
-    --glass-hover: 260 29% 92% / 0.1;
+    --glass-hover: 0 0% 100% / 0.1;
     --glass-sheen: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.03) 100%);
   }
 
@@ -126,11 +126,17 @@
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-display font-light;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), 0 4px 16px rgba(0, 0, 0, 0.2);
+    text-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.5),
+      0 2px 8px rgba(30, 26, 58, 0.4),
+      0 0 20px rgba(201, 168, 76, 0.06);
   }
 
   p, span, li {
-    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 2px 8px rgba(0, 0, 0, 0.15);
+    text-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.35),
+      0 2px 6px rgba(30, 26, 58, 0.25),
+      0 0 14px rgba(201, 168, 76, 0.04);
   }
 
   /* Global text hover effect - turn gold on hover */
