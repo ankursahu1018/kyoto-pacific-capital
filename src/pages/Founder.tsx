@@ -47,7 +47,7 @@ const Founder = () => {
                         <GlassCard className="p-8 lg:p-12 animate-fade-up delay-200">
                             <div className="flex flex-col items-center text-center">
                                 <div className="w-56 h-56 md:w-64 md:h-64 rounded-2xl p-1 bg-gradient-to-br from-gold/40 via-gold/20 to-transparent shadow-gold-glow">
-                                    <div className="w-full h-full rounded-2xl overflow-hidden border border-gold/30 bg-[hsl(271,70%,14%)]/80">
+                                    <div className="w-full h-full rounded-2xl overflow-hidden border border-gold/30 bg-[hsl(248,39%,20%)]/80">
                                         <img
                                             src={ankurPhoto}
                                             alt="Ankur Sahu - Founder & Managing Partner of Kyoto Pacific Capital"

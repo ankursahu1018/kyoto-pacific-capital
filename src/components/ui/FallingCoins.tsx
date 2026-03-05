@@ -35,7 +35,7 @@ export const FallingCoins = () => {
       {coins.map((coin) => (
         <div
           key={coin.id}
-          className="absolute rounded-full coin-fall dark:bg-[#8B5CF6] bg-[#D0A651]"
+          className="absolute rounded-full coin-fall dark:bg-[#3D3468] bg-[#C9A84C]"
           style={{
             width: coin.size,
             height: coin.size,

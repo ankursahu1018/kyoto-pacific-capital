@@ -128,39 +128,38 @@ export const Navigation = () => {
               {language === "jp" ? "創業者紹介" : "Founder"}
             </Link>
 
-            {/* Experience — navigates AND expands to show Case Studies */}
-            <div className="flex items-center gap-2 py-2">
-              <Link to="/experience" className="text-2xl md:text-3xl text-foreground/60 hover:text-gold transition-colors">
-                {language === "jp" ? "投資実績" : "Experience"}
-              </Link>
-              <button
-                onClick={() => setIsExperienceOpen(!isExperienceOpen)}
-                className="text-foreground/60 hover:text-gold transition-colors"
-              >
-                <span className={cn("text-[8px] inline-block transition-transform duration-200", isExperienceOpen ? "rotate-90" : "")}>►</span>
-              </button>
-            </div>
+            {/* Experience — navigates to Experience page */}
+            <Link to="/experience" className="block py-2 text-2xl md:text-3xl text-foreground/60 hover:text-gold transition-colors">
+              {language === "jp" ? "投資実績" : "Experience"}
+            </Link>
 
-            {/* Experience children */}
-            <div className={cn("pl-4 space-y-2 overflow-hidden transition-all duration-300", isExperienceOpen ? "max-h-[20rem] opacity-100 mt-1" : "max-h-0 opacity-0")}>
-              {/* Case Studies — expandable, does NOT navigate */}
-              <div className="pl-4">
+            {/* Case Studies — hidden for now, preserved for future use */}
+            <div className="hidden">
+              <div className="flex items-center gap-2 py-2">
                 <button
-                  onClick={() => setIsCaseStudiesOpen(!isCaseStudiesOpen)}
-                  className="flex items-center gap-2 w-full py-2 text-xl md:text-2xl text-foreground/50 hover:text-gold transition-colors"
+                  onClick={() => setIsExperienceOpen(!isExperienceOpen)}
+                  className="text-foreground/60 hover:text-gold transition-colors"
                 >
-                  <span>{language === "jp" ? "ケーススタディ" : "Case Studies"}</span>
-                  <span className={cn("text-[8px] inline-block transition-transform duration-200", isCaseStudiesOpen ? "rotate-90" : "")}>►</span>
+                  <span className={cn("text-[8px] inline-block transition-transform duration-200", isExperienceOpen ? "rotate-90" : "")}>►</span>
                 </button>
-
-                {/* Case study pages */}
-                <div className={cn("pl-4 space-y-2 overflow-hidden transition-all duration-300", isCaseStudiesOpen ? "max-h-40 opacity-100 mt-1" : "max-h-0 opacity-0")}>
-                  <Link to="/case-studies/usj" className="block py-2 text-lg md:text-xl text-foreground/40 hover:text-gold transition-colors">
-                    {language === "jp" ? "ユニバーサル・スタジオ・ジャパン" : "Universal Studios Japan"}
-                  </Link>
-                  <Link to="/case-studies/renew" className="block py-2 text-lg md:text-xl text-foreground/40 hover:text-gold transition-colors">
-                    {language === "jp" ? "リニュー・パワー" : "ReNew Power"}
-                  </Link>
+              </div>
+              <div className={cn("pl-4 space-y-2 overflow-hidden transition-all duration-300", isExperienceOpen ? "max-h-[20rem] opacity-100 mt-1" : "max-h-0 opacity-0")}>
+                <div className="pl-4">
+                  <button
+                    onClick={() => setIsCaseStudiesOpen(!isCaseStudiesOpen)}
+                    className="flex items-center gap-2 w-full py-2 text-xl md:text-2xl text-foreground/50 hover:text-gold transition-colors"
+                  >
+                    <span>{language === "jp" ? "ケーススタディ" : "Case Studies"}</span>
+                    <span className={cn("text-[8px] inline-block transition-transform duration-200", isCaseStudiesOpen ? "rotate-90" : "")}>►</span>
+                  </button>
+                  <div className={cn("pl-4 space-y-2 overflow-hidden transition-all duration-300", isCaseStudiesOpen ? "max-h-40 opacity-100 mt-1" : "max-h-0 opacity-0")}>
+                    <Link to="/case-studies/usj" className="block py-2 text-lg md:text-xl text-foreground/40 hover:text-gold transition-colors">
+                      {language === "jp" ? "ユニバーサル・スタジオ・ジャパン" : "Universal Studios Japan"}
+                    </Link>
+                    <Link to="/case-studies/renew" className="block py-2 text-lg md:text-xl text-foreground/40 hover:text-gold transition-colors">
+                      {language === "jp" ? "リニュー・パワー" : "ReNew Power"}
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>

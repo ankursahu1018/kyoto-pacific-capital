@@ -73,11 +73,11 @@ export default {
         "3xl": "1.5rem",
       },
       boxShadow: {
-        "gold-glow": "0 8px 32px hsla(40, 58%, 57%, 0.25)",
-        "gold-glow-lg": "0 0 40px hsla(40, 58%, 57%, 0.25), 0 8px 32px hsla(40, 65%, 50%, 0.2), 0 20px 60px hsla(271, 60%, 5%, 0.6)",
+        "gold-glow": "0 8px 32px hsla(44, 54%, 54%, 0.25)",
+        "gold-glow-lg": "0 0 40px hsla(44, 54%, 54%, 0.25), 0 8px 32px hsla(44, 50%, 48%, 0.20), 0 20px 60px hsla(248, 38%, 5%, 0.5)",
         "glass": "0 8px 32px rgba(0, 0, 0, 0.4)",
-        "silk": "0 20px 60px hsla(275, 60%, 8%, 0.6), 0 8px 24px hsla(275, 50%, 5%, 0.4)",
-        "silk-glow": "0 0 80px hsla(275, 50%, 20%, 0.3)",
+        "silk": "0 20px 60px hsla(248, 38%, 10%, 0.6), 0 8px 24px hsla(248, 38%, 5%, 0.4)",
+        "silk-glow": "0 0 80px hsla(248, 36%, 20%, 0.3)",
       },
       backdropBlur: {
         xs: "2px",

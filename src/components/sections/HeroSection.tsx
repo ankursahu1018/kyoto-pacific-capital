@@ -76,7 +76,7 @@ export const HeroSection = () => {
       />
 
       {/* Purple overlay */}
-      <div className="absolute inset-0 bg-[hsl(271,85%,15%)]/70" />
+      <div className="absolute inset-0 bg-[hsl(248,38%,16%)]/70" />
 
       {/* City markers - Shining Stars */}
       {language !== "jp" && cities.map((city) => (
@@ -103,7 +103,7 @@ export const HeroSection = () => {
               className={`block text-gold text-[2rem] md:text-[2.5rem] lg:text-[3rem] mt-2 transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
                 }`}
               style={{
-                textShadow: "0 0 10px rgba(212, 175, 55, 0.45)",
+                textShadow: "0 0 10px rgba(201, 168, 76, 0.45)",
               }}
             >
               {rotatingWords[currentIndex]}
