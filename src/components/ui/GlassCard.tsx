@@ -11,7 +11,7 @@ export const GlassCard = ({ children, className, hover = true, ...props }: Glass
   return (
     <div
       className={cn(
-        "glass-card silk-shimmer",
+        "glass-card",
         hover && "hover:shadow-gold-glow-lg",
         className
       )}
