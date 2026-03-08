@@ -11,7 +11,7 @@ const Contact = () => {
     <Layout>
       <SEO
         title="Contact Us | Kyoto Pacific Capital"
-        description="We're selective about who we back and work with, but all-in once we do."
+        description="We're selective about who we back and work with, but fully committed once we do."
         canonicalUrl="https://kyotopacific.com/contact"
       />
 
@@ -23,13 +23,13 @@ const Contact = () => {
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed animate-fade-up delay-100">
               {isJp
-                ? "私たちは、支援先・協業先を厳選しています。しかし、一度パートナーとなれば、全力でコミットします。"
-                : "We're selective about who we back and work with, but all-in once we do."}
+                ? "私たちは、支援先・協業先を厳選しています。しかし、一度パートナーとなれば、全力を尽くしてコミットします。"
+                : "We're selective about who we back and work with, but fully committed once we do."}
             </p>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed mt-4 animate-fade-up delay-200">
               {isJp
-                ? "大胆かつグローバルな事業を構築・変革されている方で、私たちがお役に立てるとお考えでしたら、ぜひご連絡ください。"
-                : "If you're building or transforming something bold and global, and believe we can help, we'd love to hear from you."}
+                ? "グローバルなビジョンを持ち、類まれな事業を構築・変革されている方で、私たちがお力になれるとお考えでしたら、ぜひご連絡ください。"
+                : "If you're building or transforming something extraordinary with a global vision, and believe we can help, we'd love to hear from you."}
             </p>
 
             <div className="mt-10 flex items-center justify-center gap-3 text-gold animate-fade-up delay-300">

@@ -9,33 +9,33 @@ const Strategy = () => {
 
   const whatWeLookFor = isJp
     ? [
-      "「世界を変える」という強い意志を持ち、その実現まで決して諦めない創業者",
-      "成長、転換、飛躍の重要な局面にある企業",
+      "深い専門知識と明確な成長ビジョンを持つ創業者・経営チーム",
+      "新製品投入、規模拡大、新市場参入、事業変革など、転換期にある企業",
       "明確な市場ニーズ、独自の競争優位性、成長余地のある製品・サービス",
       "日本、インド、米国、欧州を中心としたグローバルな事業展開の可能性",
-      "カテゴリーを定義する、あるいは創造する可能性を持つ事業",
+      "業界を代表する卓越した企業を構築するポテンシャル",
     ]
     : [
-      "Management teams with deep domain expertise and a clear vision for growth",
-      "Businesses at an inflection point: scaling, entering new markets, or undergoing transformation",
+      "Founders/Management teams with deep domain expertise and a clear vision for growth",
+      "Businesses at an inflection point: new product introductions, scaling, entering new markets, or undergoing transformation",
       "Products and services with demonstrated market demand and defensible competitive position",
       "Opportunities with relevance across our core geographies: Japan, India, the United States, and Europe",
-      "Potential to build market-leading positions in attractive sectors",
+      "Potential to build preeminent companies",
     ];
 
   const howWeWork = isJp
     ? [
       "アイデア段階から事業拡大まで投資し、初回投資後も長期にわたり関与",
-      "資本提供に加え、事業運営の知見、戦略的明確化、グローバルネットワーク、リスク管理を提供",
-      "傍観者としてではなく、創業者と肩を並べて共に取り組む",
-      "事業拡大に必要な資本を提供するため、優れた個人・機関投資家のネットワークと連携",
+      "経営チームと「共同創業者」として直接協働し、受動的・純粋な財務投資家ではなく、アクティブなパートナーとして関与",
+      "資本提供に加え、戦略立案、財務規律、人材獲得、グローバルネットワーク、リスク管理といった事業運営能力を提供",
+      "豊富な経験を持つエグゼクティブや機関投資家のネットワークを活用し、ポートフォリオ企業の事業運営・資金調達ニーズを支援",
       "長期的視点、価値観の共有、創業者ファーストのアプローチを徹底",
     ]
     : [
       "We take a long-term view. Our partnerships often span a decade or more.",
-      "We bring operating capabilities alongside capital: strategic planning, talent, global networks, and risk management",
-      "We work directly with management teams as active partners, not passive investors",
-      "We draw on a network of experienced operators and institutional partners to support portfolio companies",
+      "We work directly with management teams as active partners or 'co-entrepreneurs', not passive or pure financial investors",
+      "We bring operating capabilities alongside capital: strategic planning, financial discipline, talent acquisition, global networks, and risk management",
+      "We draw on a network of experienced executives and institutional partners to support portfolio companies' operational or capital needs",
       "We focus on sustainable value creation through disciplined execution, not financial engineering",
     ];
 
@@ -102,8 +102,8 @@ const Strategy = () => {
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed animate-fade-up delay-100">
               {isJp
-                ? "卓越した創業者を支援し、グローバル企業の構築を共に目指します。柔軟な資本、戦略的知見、実践的なパートナーシップを提供します。"
-                : "We invest in businesses with strong fundamentals and global potential, providing capital, operating experience, and strategic partnership to accelerate long-term growth."}
+                ? "ビジョンと情熱を持つリーダー、優れたプロダクトマーケットフィット、そしてグローバルな成長可能性を備えた企業に投資し、資本、事業運営の経験、戦略的知見を提供して長期的な成長を加速させます。"
+                : "We invest in businesses with visionary and passionate leaders, strong product market fit and global potential, providing capital, operating experience, and strategic insights to accelerate long-term growth."}
             </p>
           </div>
 
