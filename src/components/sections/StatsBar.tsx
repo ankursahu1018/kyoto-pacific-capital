@@ -5,9 +5,20 @@ interface StatCardProps {
   value: string;
   label: string;
   delay: number;
+  staticDisplay?: boolean;
 }
 
-const StatCard = ({ value, label, delay }: StatCardProps) => {
+const cardBaseStyle: React.CSSProperties = {
+  background: "radial-gradient(ellipse at center, #2a2550 0%, #1a1535 100%)",
+  border: "1px solid rgba(212, 168, 67, 0.12)",
+  boxShadow: "0 6px 18px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08), inset 0 -1px 0 rgba(0,0,0,0.2)",
+  transition: "box-shadow 0.3s ease",
+};
+
+const cardHoverShadow = "0 0 30px rgba(212, 168, 67, 0.6), 0 6px 18px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08), inset 0 -1px 0 rgba(0,0,0,0.2)";
+const cardRestShadow = "0 6px 18px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.08), inset 0 -1px 0 rgba(0,0,0,0.2)";
+
+const StatCard = ({ value, label, delay, staticDisplay }: StatCardProps) => {
   const [displayValue, setDisplayValue] = useState("0");
   const [isVisible, setIsVisible] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
@@ -32,6 +43,11 @@ const StatCard = ({ value, label, delay }: StatCardProps) => {
   useEffect(() => {
     if (!isVisible) return;
 
+    if (staticDisplay) {
+      const timer = setTimeout(() => setDisplayValue(value), delay);
+      return () => clearTimeout(timer);
+    }
+
     const timer = setTimeout(() => {
       const numMatch = value.match(/[\d.]+/);
       if (!numMatch) {
@@ -55,8 +71,8 @@ const StatCard = ({ value, label, delay }: StatCardProps) => {
           setDisplayValue(value);
           clearInterval(counter);
         } else {
-          const displayNum = targetNum >= 10 
-            ? Math.round(current).toString() 
+          const displayNum = targetNum >= 10
+            ? Math.round(current).toString()
             : current.toFixed(1);
           setDisplayValue(`${prefix}${displayNum}${suffix}`);
         }
@@ -66,17 +82,27 @@ const StatCard = ({ value, label, delay }: StatCardProps) => {
     }, delay);
 
     return () => clearTimeout(timer);
-  }, [isVisible, value, delay]);
+  }, [isVisible, value, delay, staticDisplay]);
 
   return (
     <div
       ref={ref}
-      className="glass-card h-48 md:h-56 rounded-3xl flex flex-col items-center justify-center p-6 bg-card shadow-none transition-shadow duration-300 hover:shadow-gold-glow-lg hover:!transform-none hover:!border-white/10"
+      className="rounded-3xl flex flex-col items-center justify-center p-4 md:p-6 h-full min-h-[130px] md:min-h-[150px]"
+      style={cardBaseStyle}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.boxShadow = cardHoverShadow;
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.boxShadow = cardRestShadow;
+      }}
     >
-      <div className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-gold mb-3">
+      <div
+        className="font-display font-light text-gold mb-2 md:mb-3 whitespace-nowrap"
+        style={{ fontSize: "clamp(1.4rem, 2.8vw, 2rem)" }}
+      >
         {displayValue}
       </div>
-      <div className="text-sm md:text-base text-muted-foreground uppercase tracking-wider text-center">
+      <div className="text-xs md:text-sm text-muted-foreground uppercase tracking-wider text-center">
         {label}
       </div>
     </div>
@@ -85,40 +111,48 @@ const StatCard = ({ value, label, delay }: StatCardProps) => {
 
 export const StatsBar = () => {
   const { t } = useLanguage();
-  
+
   const stats = [
-    { 
-      value: "$21B+", 
+    {
+      value: "$4B+",
+      label: String(t("home.stats.valueInvested")),
+    },
+    {
+      value: "$12B+",
       label: String(t("home.stats.valueCreated")),
     },
-    { 
-      value: "20+", 
+    {
+      value: "25+",
       label: String(t("home.stats.yearsExperience")),
     },
-    { 
-      value: "3.0x", 
+    {
+      value: "Five",
+      label: String(t("home.stats.billionOutcomes")),
+      staticDisplay: true,
+    },
+    {
+      value: "3.0x",
       label: String(t("home.stats.grossMoic")),
     },
-    { 
-      value: "26%", 
+    {
+      value: "26%",
       label: String(t("home.stats.grossIrr")),
     },
   ];
 
   return (
-    <section className="py-16 md:py-20">
-      <div className="container mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-          {stats.map((stat, index) => (
-            <StatCard
-              key={stat.label}
-              value={stat.value}
-              label={stat.label}
-              delay={index * 150}
-            />
-          ))}
-        </div>
+    <div className="w-full py-8 md:py-12">
+      <div className="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4 w-full">
+        {stats.map((stat, index) => (
+          <StatCard
+            key={stat.label}
+            value={stat.value}
+            label={stat.label}
+            delay={index * 150}
+            staticDisplay={stat.staticDisplay}
+          />
+        ))}
       </div>
-    </section>
+    </div>
   );
 };

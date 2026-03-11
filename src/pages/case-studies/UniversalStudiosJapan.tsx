@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import usjLogo from "@/assets/logo-UniversalStudiosJapan.png";
 
 const overview = [
-  { label: "Investment Period", jpLabel: "投資期間", value: "Aug 2005 – May 2017", jpValue: "2005年8月～2017年5月" },
+  { label: "Investment Period", jpLabel: "投資期間", value: "Aug 2005 to May 2017", jpValue: "2005年8月～2017年5月" },
   { label: "Geography | Industry", jpLabel: "地域｜業種", value: "Japan | Theme Parks", jpValue: "日本｜テーマパーク" },
   { label: "Strategy", jpLabel: "戦略", value: "Transformation / Growth", jpValue: "変革／成長" },
   { label: "Role", jpLabel: "役割", value: "Lead Investor", jpValue: "リードインベスター" },
@@ -33,7 +33,7 @@ const UniversalStudiosJapan = () => {
     <Layout>
       <SEO
         title={isJp ? "ユニバーサル・スタジオ・ジャパン | 京都パシフィックキャピタル" : "Universal Studios Japan | Kyoto Pacific Capital"}
-        description={isJp ? "テーマパークの変革 — 世界で最も成功したPE投資のひとつ" : "Transformation of a Theme Park leading to one of the most successful PE investments globally"}
+        description={isJp ? "テーマパークの変革: 世界で最も成功したPE投資のひとつ" : "Transformation of a Theme Park leading to one of the most successful PE investments globally"}
         canonicalUrl="https://www.kyotopacific.com/case-studies/usj"
       />
 
@@ -54,7 +54,7 @@ const UniversalStudiosJapan = () => {
                 {isJp ? "ユニバーサル・スタジオ・ジャパン" : "Universal Studios Japan"}
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground animate-fade-up delay-100">
-                {isJp ? "テーマパークの変革 — 世界で最も成功したPE投資のひとつ" : "Transformation of a Theme Park leading to one of the most successful PE investments globally"}
+                {isJp ? "テーマパークの変革: 世界で最も成功したPE投資のひとつ" : "Transformation of a Theme Park leading to one of the most successful PE investments globally"}
               </p>
             </div>
 

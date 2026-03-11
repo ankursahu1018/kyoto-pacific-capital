@@ -113,7 +113,7 @@ export const Navigation = () => {
         )}
       >
         <div className="container mx-auto px-6 py-6">
-          {/* About Us — Level 1: expandable parent, does NOT navigate */}
+          {/* About Us: Level 1 expandable parent, does NOT navigate */}
           <button
             onClick={() => setIsAboutOpen(!isAboutOpen)}
             className="flex items-center gap-2 w-full py-2 text-3xl md:text-4xl text-foreground/80 hover:text-gold transition-colors"
@@ -128,12 +128,12 @@ export const Navigation = () => {
               {language === "jp" ? "創業者紹介" : "Founder"}
             </Link>
 
-            {/* Experience — navigates to Experience page */}
+            {/* Experience: navigates to Experience page */}
             <Link to="/experience" className="block py-2 text-2xl md:text-3xl text-foreground/60 hover:text-gold transition-colors">
               {language === "jp" ? "投資実績" : "Experience"}
             </Link>
 
-            {/* Case Studies — hidden for now, preserved for future use */}
+            {/* Case Studies: hidden for now, preserved for future use */}
             <div className="hidden">
               <div className="flex items-center gap-2 py-2">
                 <button

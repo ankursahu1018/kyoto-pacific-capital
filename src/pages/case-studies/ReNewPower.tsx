@@ -4,7 +4,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import renewPowerLogo from "@/assets/logo-renew-power.png";
 
 const overview = [
-  { label: "Investment Period", jpLabel: "投資期間", value: "Sep 2011 – Present", jpValue: "2011年9月～現在" },
+  { label: "Investment Period", jpLabel: "投資期間", value: "Sep 2011 to Present", jpValue: "2011年9月～現在" },
   { label: "Geography | Industry", jpLabel: "地域｜業種", value: "India | Energy", jpValue: "インド｜エネルギー" },
   { label: "Strategy", jpLabel: "戦略", value: "Platform Build-up", jpValue: "プラットフォーム構築" },
   { label: "Role", jpLabel: "役割", value: "Lead Investor", jpValue: "リードインベスター" },

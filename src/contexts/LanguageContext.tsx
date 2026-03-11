@@ -28,14 +28,8 @@ const contentMap = {
 };
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [language, setLanguageState] = useState<Language>(() => {
-    // Initialize from localStorage
-    if (typeof window !== "undefined") {
-      const saved = localStorage.getItem("kpc-language");
-      return (saved === "jp" ? "jp" : "en") as Language;
-    }
-    return "en";
-  });
+  // Force EN until JP launch - localStorage check disabled
+  const [language, setLanguageState] = useState<Language>("en");
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);

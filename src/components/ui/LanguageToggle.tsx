@@ -10,8 +10,9 @@ export const LanguageToggle = () => {
     }
   };
 
+  // JP toggle hidden until JP launch - keep code intact
   return (
-    <div className="flex items-center gap-0 rounded-lg border border-border overflow-hidden">
+    <div className="flex items-center gap-0 rounded-lg border border-border overflow-hidden" style={{ display: 'none' }}>
       <button
         type="button"
         aria-label="Switch to English"

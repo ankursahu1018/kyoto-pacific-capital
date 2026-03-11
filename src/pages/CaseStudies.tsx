@@ -42,10 +42,10 @@ const caseStudies: CaseStudy[] = [
     name: "Universal Studios Japan",
     jpName: "ユニバーサル・スタジオ・ジャパン",
     tagline: "Transformation of a Theme Park leading to one of the most successful PE investments globally",
-    jpTagline: "テーマパークの変革 — 世界で最も成功したPE投資のひとつ",
+    jpTagline: "テーマパークの変革: 世界で最も成功したPE投資のひとつ",
     logo: usjLogo,
     overview: [
-      { label: "Investment Period", jpLabel: "投資期間", value: "Aug 2005 – May 2017", jpValue: "2005年8月～2017年5月" },
+      { label: "Investment Period", jpLabel: "投資期間", value: "Aug 2005 to May 2017", jpValue: "2005年8月～2017年5月" },
       { label: "Geography | Industry", jpLabel: "地域｜業種", value: "Japan | Theme Parks", jpValue: "日本｜テーマパーク" },
       { label: "Strategy", jpLabel: "戦略", value: "Transformation / Growth", jpValue: "変革／成長" },
       { label: "Role", jpLabel: "役割", value: "Lead Investor", jpValue: "リードインベスター" },
@@ -71,7 +71,7 @@ const caseStudies: CaseStudy[] = [
     jpTagline: "インド最大かつ世界トップ10の独立系再生可能エネルギー企業の創出",
     logo: renewPowerLogo,
     overview: [
-      { label: "Investment Period", jpLabel: "投資期間", value: "Sep 2011 – Present", jpValue: "2011年9月～現在" },
+      { label: "Investment Period", jpLabel: "投資期間", value: "Sep 2011 to Present", jpValue: "2011年9月～現在" },
       { label: "Geography | Industry", jpLabel: "地域｜業種", value: "India | Energy", jpValue: "インド｜エネルギー" },
       { label: "Strategy", jpLabel: "戦略", value: "Platform Build-up", jpValue: "プラットフォーム構築" },
       { label: "Role", jpLabel: "役割", value: "Lead Investor", jpValue: "リードインベスター" },

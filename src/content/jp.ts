@@ -13,8 +13,10 @@ export const content = {
   },
   home: {
     stats: {
+      valueInvested: "投資総額",
       valueCreated: "創出価値",
       yearsExperience: "投資経験",
+      billionOutcomes: "10億ドル超案件",
       grossMoic: "総合MOIC",
       grossIrr: "総合IRR",
     },

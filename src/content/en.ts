@@ -13,8 +13,10 @@ export const content = {
   },
   home: {
     stats: {
+      valueInvested: "Value Invested",
       valueCreated: "Value Created",
-      yearsExperience: "Years Experience",
+      yearsExperience: "Years Investment Experience",
+      billionOutcomes: "$1B+ Outcomes",
       grossMoic: "Gross MOIC",
       grossIrr: "Gross IRR",
     },

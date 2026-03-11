@@ -92,7 +92,7 @@ USJでは、13年間にわたり中心的な役割を担い、筆頭株主を代
 - Japanese: 投資戦略
 
 **Subtitle:**
-- English: We back exceptional founders building global businesses — combining flexible capital, strategic insight, and hands-on partnership.
+- English: We back exceptional founders building global businesses, combining flexible capital, strategic insight, and hands-on partnership.
 - Japanese: 卓越した創業者を支援し、グローバル企業の構築を共に目指します。柔軟な資本、戦略的知見、実践的なパートナーシップを提供します。
 
 **Section: What We Look For**
@@ -122,11 +122,11 @@ USJでは、13年間にわたり中心的な役割を担い、筆頭株主を代
 - Japanese: 注力セクター
 
 **Bullets:**
-- 消費財 — グローバル展開の可能性を持つブランド
-- テクノロジー — AI、半導体、SaaS、EdTech、ビジネスサービス
-- ヘルスケア — 医療機器、医療サービス、ウェルネス
-- 再生可能エネルギー — エネルギー転換および関連インフラ
-- ソーシャルインパクト — 社会的意義と収益性、スケーラビリティを兼ね備えた事業
+- 消費財: グローバル展開の可能性を持つブランド
+- テクノロジー: AI、半導体、SaaS、EdTech、ビジネスサービス
+- ヘルスケア: 医療機器、医療サービス、ウェルネス
+- 再生可能エネルギー: エネルギー転換および関連インフラ
+- ソーシャルインパクト: 社会的意義と収益性、スケーラビリティを兼ね備えた事業
 
 ---
 
@@ -137,7 +137,7 @@ USJでは、13年間にわたり中心的な役割を担い、筆頭株主を代
 - Japanese: お問い合わせ
 
 **Main Text:**
-- English: "We're selective about who we back and work with — but all-in once we do. If you're building or transforming something bold and global, and believe we can help, we'd love to hear from you."
+- English: "We're selective about who we back and work with, but all-in once we do. If you're building or transforming something bold and global, and believe we can help, we'd love to hear from you."
 - Japanese: 「私たちは、支援先・協業先を厳選しています。しかし、一度パートナーとなれば、全力でコミットします。大胆かつグローバルな事業を構築・変革されている方で、私たちがお役に立てるとお考えでしたら、ぜひご連絡ください。」
 
 **Email Label:**
