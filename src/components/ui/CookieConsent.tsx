@@ -29,7 +29,7 @@ export const CookieConsent = () => {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-20 md:bottom-6 left-4 md:left-6 z-50">
+    <div className="fixed bottom-4 right-4 md:bottom-6 md:left-6 md:right-auto z-50">
       {isExpanded ? (
         <div className="backdrop-blur-xl bg-card border border-border rounded-xl p-4 shadow-lg max-w-sm animate-fade-up">
           <button
