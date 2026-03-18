@@ -48,33 +48,33 @@ export const Navigation = () => {
       )}
     >
       <div className="container mx-auto px-6 lg:px-12">
-        <div className="flex items-center justify-between h-28">
+        <div className="flex items-center justify-between h-20 md:h-28">
           {/* Logo - EN only, unchanged */}
           <Link
             to="/"
-            className="flex flex-col group"
+            className="flex flex-col group flex-shrink-0"
           >
-            <img src={kpcLogoEn} alt="Kyoto Pacific Capital logo" loading="lazy" className="h-20 md:h-24 lg:h-28 group-hover:opacity-80 transition-opacity duration-300" />
+            <img src={kpcLogoEn} alt="Kyoto Pacific Capital logo" loading="lazy" className="h-14 md:h-24 lg:h-28 group-hover:opacity-80 transition-opacity duration-300" />
           </Link>
 
           {/* Right side - JP logo, Home icon, hamburger */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-2 md:gap-4">
             <img
               src={kpcLogoJp}
               alt="京都パシフィックキャピタル"
-              className="h-14 md:h-16 lg:h-20 object-contain"
+              className="h-10 md:h-16 lg:h-20 object-contain"
             />
             <Link
               to="/"
               aria-label="Home"
-              className="flex h-12 w-12 items-center justify-center rounded-lg text-gold transition-all duration-300 hover:opacity-80"
+              className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-lg text-gold transition-all duration-300 hover:opacity-80"
             >
-              <Home className="h-7 w-7" />
+              <Home className="h-5 w-5 md:h-7 md:w-7" />
             </Link>
             <Button
               variant="ghost"
               aria-label={isMobileOpen ? (language === "jp" ? "メニューを閉じる" : "Close navigation menu") : (language === "jp" ? "メニューを開く" : "Open navigation menu")}
-              className="text-foreground hover:text-gold h-14 w-14 p-0 [&_svg]:!h-10 [&_svg]:!w-10"
+              className="text-foreground hover:text-gold h-10 w-10 md:h-14 md:w-14 p-0 [&_svg]:!h-7 [&_svg]:!w-7 md:[&_svg]:!h-10 md:[&_svg]:!w-10"
               onClick={() => setIsMobileOpen(!isMobileOpen)}
             >
               {isMobileOpen ? (
@@ -94,17 +94,17 @@ export const Navigation = () => {
           isMobileOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 border-transparent"
         )}
       >
-        <div className="px-8 py-6 space-y-1">
-          <Link to="/founder" className="block py-2 text-xl md:text-2xl text-foreground/80 hover:text-gold transition-colors">
+        <div className="px-6 py-4 md:px-8 md:py-6 space-y-1">
+          <Link to="/founder" className="block py-2 text-lg md:text-2xl text-foreground/80 hover:text-gold transition-colors">
             {language === "jp" ? "創業者紹介" : "Founder"}
           </Link>
-          <Link to="/experience" className="block py-2 text-xl md:text-2xl text-foreground/80 hover:text-gold transition-colors">
+          <Link to="/experience" className="block py-2 text-lg md:text-2xl text-foreground/80 hover:text-gold transition-colors">
             {language === "jp" ? "投資実績" : "Investment Experience"}
           </Link>
-          <Link to="/strategy" className="block py-2 text-xl md:text-2xl text-foreground/80 hover:text-gold transition-colors">
+          <Link to="/strategy" className="block py-2 text-lg md:text-2xl text-foreground/80 hover:text-gold transition-colors">
             {language === "jp" ? "投資戦略" : "Strategy"}
           </Link>
-          <Link to="/contact" className="block py-2 text-xl md:text-2xl text-foreground/80 hover:text-gold transition-colors">
+          <Link to="/contact" className="block py-2 text-lg md:text-2xl text-foreground/80 hover:text-gold transition-colors">
             {language === "jp" ? "お問い合わせ" : "Contact Us"}
           </Link>
         </div>

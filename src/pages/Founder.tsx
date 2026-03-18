@@ -35,21 +35,21 @@ const Founder = () => {
                 canonicalUrl="https://kyotopacific.com/founder"
             />
 
-            <section className="pb-24 min-h-screen pt-32 md:pt-36">
-                <div className="container mx-auto px-6 lg:px-12">
+            <section className="pb-16 md:pb-24 min-h-screen pt-24 md:pt-36">
+                <div className="container mx-auto px-4 md:px-6 lg:px-12">
                     <div className="max-w-5xl mx-auto">
-                        <div className="text-center mb-16">
-                            <h1 className="text-4xl md:text-5xl font-display font-light text-gold mb-3 animate-fade-up">
+                        <div className="text-center mb-10 md:mb-16">
+                            <h1 className="text-3xl md:text-5xl font-display font-light text-gold mb-3 animate-fade-up">
                                 {isJp ? "アンクール・サフ" : "Ankur Sahu"}
                             </h1>
-                            <p className="text-xl md:text-2xl text-muted-foreground animate-fade-up delay-100">
+                            <p className="text-lg md:text-2xl text-muted-foreground animate-fade-up delay-100">
                                 {isJp ? "創業者・マネージングパートナー" : "Founder & Managing Partner"}
                             </p>
                         </div>
 
-                        <GlassCard className="p-8 lg:p-12 animate-fade-up delay-200">
+                        <GlassCard className="p-5 md:p-8 lg:p-12 animate-fade-up delay-200">
                             <div className="flex flex-col items-center text-center">
-                                <div className="w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl p-1 bg-gradient-to-br from-gold/40 via-gold/20 to-transparent shadow-gold-glow">
+                                <div className="w-56 h-56 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl p-1 bg-gradient-to-br from-gold/40 via-gold/20 to-transparent shadow-gold-glow">
                                     <div className="w-full h-full rounded-2xl overflow-hidden border border-gold/30 bg-[hsl(248,39%,20%)]/80">
                                         <img
                                             src={ankurPhoto}
@@ -60,7 +60,7 @@ const Founder = () => {
                                     </div>
                                 </div>
 
-                                <div className="mt-10 space-y-6 text-muted-foreground leading-relaxed text-xl text-left max-w-3xl">
+                                <div className="mt-8 md:mt-10 space-y-4 md:space-y-6 text-muted-foreground leading-relaxed text-base md:text-xl text-left max-w-3xl">
                                     {(isJp ? jpParagraphs : enParagraphs).map((paragraph) => (
                                         <p key={paragraph}>{paragraph}</p>
                                     ))}

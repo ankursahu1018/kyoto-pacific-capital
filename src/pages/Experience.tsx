@@ -250,9 +250,9 @@ const Experience = () => {
         canonicalUrl="https://kyotopacific.com/experience"
       />
 
-      <section className="pb-24 min-h-screen pt-32 md:pt-36">
-        <div className="container mx-auto px-6 lg:px-12">
-          <div className="max-w-6xl mx-auto pt-20 md:pt-24">
+      <section className="pb-16 md:pb-24 min-h-screen pt-24 md:pt-36">
+        <div className="container mx-auto px-4 md:px-6 lg:px-12">
+          <div className="max-w-6xl mx-auto pt-8 md:pt-24">
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-display font-light text-gold mb-3 animate-fade-up">
                 {isJp ? "投資実績" : "Investment Experience"}
@@ -266,15 +266,15 @@ const Experience = () => {
               {sections.map((section) => (
                 <div
                   key={section.title}
-                  className="rounded-3xl border border-white/10 bg-card/60 p-8 md:p-10 shadow-silk transition-all duration-300 hover:shadow-gold-glow-lg hover:border-gold/30"
+                  className="rounded-3xl border border-white/10 bg-card/60 p-5 md:p-10 shadow-silk transition-all duration-300 hover:shadow-gold-glow-lg hover:border-gold/30"
                 >
                   <h2 className="text-2xl md:text-3xl font-display font-light text-gold mb-2">
                     {isJp ? section.jpTitle : section.title}
                   </h2>
-                  <p className="text-xl text-muted-foreground mb-8">
+                  <p className="text-base md:text-xl text-muted-foreground mb-6 md:mb-8">
                     {isJp ? section.jpDescription : section.description}
                   </p>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8">
+                  <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-8">
                     {section.companies.map((company) => {
                       const paddedContainLogos = new Set([
                         "Sanyo Electric",
@@ -299,7 +299,7 @@ const Experience = () => {
 
                       return (
                         <div key={`${section.title}-${company.name}`} className="space-y-3 text-center">
-                          <div className="group relative mx-auto w-36 md:w-40">
+                          <div className="group relative mx-auto w-28 sm:w-36 md:w-40">
                             {company.logo ? (
                               <>
                                 <div className="h-20 md:h-24 transition-transform duration-300 group-hover:scale-110 group-hover:shadow-gold-glow">

@@ -46,14 +46,14 @@ const Strategy = () => {
         canonicalUrl="https://kyotopacific.com/strategy"
       />
 
-      <section className="pb-24 min-h-screen pt-32 md:pt-36">
-        <div className="container mx-auto px-6 lg:px-12">
+      <section className="pb-16 md:pb-24 min-h-screen pt-24 md:pt-36">
+        <div className="container mx-auto px-4 md:px-6 lg:px-12">
           {/* Header */}
-          <div className="max-w-4xl mx-auto mb-16 text-center">
-            <h1 className="text-4xl md:text-5xl font-display font-light text-gold mb-4 animate-fade-up">
+          <div className="max-w-4xl mx-auto mb-10 md:mb-16 text-center">
+            <h1 className="text-3xl md:text-5xl font-display font-light text-gold mb-4 animate-fade-up">
               {isJp ? "投資戦略" : "Our Strategy"}
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed animate-fade-up delay-100">
+            <p className="text-base md:text-2xl text-muted-foreground leading-relaxed animate-fade-up delay-100">
               {isJp
                 ? "ビジョンと情熱を持つ創業者・リーダーが率い、優れたプロダクトマーケットフィットとグローバルな成長可能性を備えた企業に投資し、資本、事業運営の経験、戦略的知見を組み合わせて長期的な成長を加速させます。"
                 : "We invest in businesses led by visionary founders and passionate leaders with strong product-market fit and global potential. We combine capital, operating experience, and strategic insight to accelerate long-term growth."}
@@ -62,7 +62,7 @@ const Strategy = () => {
 
           <div className="max-w-5xl mx-auto space-y-12">
             {/* Section 1 */}
-            <div className="rounded-3xl border border-white/10 bg-card/60 p-8 md:p-10 shadow-silk transition-all duration-300 hover:shadow-gold-glow-lg hover:border-gold/30 animate-fade-up">
+            <div className="rounded-3xl border border-white/10 bg-card/60 p-5 md:p-10 shadow-silk transition-all duration-300 hover:shadow-gold-glow-lg hover:border-gold/30 animate-fade-up">
               <h2 className="text-2xl md:text-3xl font-display font-light text-gold mb-6">
                 {isJp ? "投資基準" : "What We Look For"}
               </h2>
@@ -70,7 +70,7 @@ const Strategy = () => {
                 {whatWeLookFor.map((item, index) => (
                   <li
                     key={item}
-                    className="flex items-start gap-4 text-xl text-muted-foreground leading-relaxed"
+                    className="flex items-start gap-3 md:gap-4 text-base md:text-xl text-muted-foreground leading-relaxed"
                     style={{ animationDelay: `${index * 80}ms` }}
                   >
                     <span className="mt-2 h-2 w-2 rounded-full bg-gold shadow-gold-glow flex-shrink-0" />
@@ -81,7 +81,7 @@ const Strategy = () => {
             </div>
 
             {/* Section 2 */}
-            <div className="rounded-3xl border border-white/10 bg-card/60 p-8 md:p-10 shadow-silk transition-all duration-300 hover:shadow-gold-glow-lg hover:border-gold/30 animate-fade-up delay-100">
+            <div className="rounded-3xl border border-white/10 bg-card/60 p-5 md:p-10 shadow-silk transition-all duration-300 hover:shadow-gold-glow-lg hover:border-gold/30 animate-fade-up delay-100">
               <h2 className="text-2xl md:text-3xl font-display font-light text-gold mb-6">
                 {isJp ? "パートナーシップのあり方" : "How We Partner"}
               </h2>
@@ -89,7 +89,7 @@ const Strategy = () => {
                 {howWeWork.map((item, index) => (
                   <li
                     key={item}
-                    className="flex items-start gap-4 text-xl text-muted-foreground leading-relaxed"
+                    className="flex items-start gap-3 md:gap-4 text-base md:text-xl text-muted-foreground leading-relaxed"
                     style={{ animationDelay: `${index * 80}ms` }}
                   >
                     <span className="mt-2 h-2 w-2 rounded-full bg-gold shadow-gold-glow flex-shrink-0" />

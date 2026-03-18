@@ -7,7 +7,7 @@ export const Footer = () => {
 
   return (
     <footer className="relative backdrop-blur-2xl bg-card/90 border-t border-border">
-      <div className="container mx-auto px-6 lg:px-12 py-16">
+      <div className="container mx-auto px-4 md:px-6 lg:px-12 py-10 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
@@ -66,7 +66,7 @@ export const Footer = () => {
         {/* Legal Links & Copyright */}
         <div className="mt-16 pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-6">
+            <div className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
               <Link
                 to="/privacy"
                 className="text-sm text-muted-foreground hover:text-gold transition-colors duration-300"

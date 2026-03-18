@@ -87,7 +87,7 @@ const StatCard = ({ value, label, delay, staticDisplay }: StatCardProps) => {
   return (
     <div
       ref={ref}
-      className="rounded-3xl flex flex-col items-center justify-center p-4 md:p-6 h-full min-h-[130px] md:min-h-[150px]"
+      className="rounded-3xl flex flex-col items-center justify-center p-3 md:p-6 h-full min-h-[100px] sm:min-h-[130px] md:min-h-[150px]"
       style={cardBaseStyle}
       onMouseEnter={(e) => {
         e.currentTarget.style.boxShadow = cardHoverShadow;
@@ -142,7 +142,7 @@ export const StatsBar = () => {
 
   return (
     <div className="w-full py-8 md:py-12">
-      <div className="grid grid-cols-3 md:grid-cols-6 gap-3 md:gap-4 w-full">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 md:gap-4 w-full">
         {stats.map((stat, index) => (
           <StatCard
             key={stat.label}
