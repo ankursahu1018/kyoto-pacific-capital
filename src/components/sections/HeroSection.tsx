@@ -78,11 +78,11 @@ export const HeroSection = () => {
       {/* Purple overlay */}
       <div className="absolute inset-0 bg-[hsl(248,38%,16%)]/70" />
 
-      {/* City markers - Shining Stars */}
+      {/* City markers - Shining Stars (behind text layer) */}
       {language !== "jp" && cities.map((city) => (
         <div
           key={city.name}
-          className="absolute z-30 pointer-events-none"
+          className="absolute z-[5] pointer-events-none hidden md:block"
           style={{ top: city.top, left: city.left }}
         >
           <div

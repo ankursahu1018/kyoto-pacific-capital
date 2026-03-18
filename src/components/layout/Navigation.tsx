@@ -57,19 +57,19 @@ export const Navigation = () => {
             <img src={kpcLogoEn} alt="Kyoto Pacific Capital logo" loading="lazy" className="h-14 md:h-24 lg:h-28 group-hover:opacity-80 transition-opacity duration-300" />
           </Link>
 
-          {/* Right side - JP logo, Home icon, hamburger */}
+          {/* Right side - JP logo + Home (hidden on mobile), hamburger always */}
           <div className="flex items-center gap-2 md:gap-4">
             <img
               src={kpcLogoJp}
               alt="京都パシフィックキャピタル"
-              className="h-10 md:h-16 lg:h-20 object-contain"
+              className="hidden md:block h-16 lg:h-20 object-contain"
             />
             <Link
               to="/"
               aria-label="Home"
-              className="flex h-10 w-10 md:h-12 md:w-12 items-center justify-center rounded-lg text-gold transition-all duration-300 hover:opacity-80"
+              className="hidden md:flex h-12 w-12 items-center justify-center rounded-lg text-gold transition-all duration-300 hover:opacity-80"
             >
-              <Home className="h-5 w-5 md:h-7 md:w-7" />
+              <Home className="h-7 w-7" />
             </Link>
             <Button
               variant="ghost"
