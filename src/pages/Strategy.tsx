@@ -83,7 +83,7 @@ const Strategy = () => {
             {/* Section 2 */}
             <div className="rounded-3xl border border-white/10 bg-card/60 p-8 md:p-10 shadow-silk transition-all duration-300 hover:shadow-gold-glow-lg hover:border-gold/30 animate-fade-up delay-100">
               <h2 className="text-2xl md:text-3xl font-display font-light text-gold mb-6">
-                {isJp ? "投資アプローチ" : "How We Work"}
+                {isJp ? "パートナーシップのあり方" : "How We Partner"}
               </h2>
               <ul className="space-y-4">
                 {howWeWork.map((item, index) => (

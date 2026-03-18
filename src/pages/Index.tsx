@@ -12,11 +12,10 @@ const Index = () => {
       <SEO
         title={isJp
           ? "京都パシフィックキャピタル | 成長と変革のためのプライベートエクイティ"
-          : "Kyoto Pacific Capital | Private Equity for Growth & Transformation"}
+          : "Partners for Growth, Transformation, and the Long Term | Kyoto Pacific Capital"}
         description={isJp
           ? "私たちはビジョナリーなリーダーとパートナーシップを組み、画期的なアイデアを卓越したグローバル企業へとスケールさせます。共同起業家として、長期的な同志として、共に歩みます。"
-          : "We partner with visionary leaders to scale breakthrough ideas into preeminent global companies working side by side as co-entrepreneurs and long-term allies."}
-        keywords="private equity Japan, PE firm India, growth capital Asia, digital transformation investment"
+          : "Kyoto Pacific Capital partners with founders, owners, and management teams across Asia, Europe, and the United States, combining long-term capital with active co-entrepreneurship."}
         canonicalUrl="https://www.kyotopacific.com"
         ogImage="https://www.kyotopacific.com/favicon.png"
         includeFAQSchema={true}

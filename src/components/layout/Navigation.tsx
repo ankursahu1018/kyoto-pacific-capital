@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { LanguageToggle } from "@/components/ui/LanguageToggle";
+
 import { useLanguage } from "@/contexts/LanguageContext";
 import { cn } from "@/lib/utils";
 import kpcLogoJp from "@/assets/kpc-logo-jp-gold.png";
@@ -29,7 +29,6 @@ export const Navigation = () => {
   useEffect(() => {
     const handleOpenMenu = () => {
       setIsMobileOpen(true);
-      setIsAboutOpen(true);
     };
     window.addEventListener("open-nav-menu", handleOpenMenu);
     return () => window.removeEventListener("open-nav-menu", handleOpenMenu);
@@ -50,45 +49,28 @@ export const Navigation = () => {
     >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-28">
-          {/* Logo */}
+          {/* Logo - EN only, unchanged */}
           <Link
             to="/"
             className="flex flex-col group"
           >
-            {language === "jp" ? (
-              <div className="flex items-center gap-4 group-hover:opacity-80 transition-opacity duration-300">
-                <div className="h-12 w-12 md:h-16 md:w-16 lg:h-20 lg:w-20 overflow-hidden">
-                  <img
-                    src={kpcLogoEn}
-                    alt="Kyoto Pacific Capital logo"
-                    loading="lazy"
-                    className="h-full w-auto object-cover object-left"
-                  />
-                </div>
-                <img
-                  src={kpcLogoJp}
-                  alt="京都パシフィックキャピタル ロゴ"
-                  loading="lazy"
-                  className="h-10 md:h-14 lg:h-16"
-                />
-              </div>
-            ) : (
-              <img src={kpcLogoEn} alt="Kyoto Pacific Capital logo" loading="lazy" className="h-20 md:h-24 lg:h-28 group-hover:opacity-80 transition-opacity duration-300" />
-            )}
+            <img src={kpcLogoEn} alt="Kyoto Pacific Capital logo" loading="lazy" className="h-20 md:h-24 lg:h-28 group-hover:opacity-80 transition-opacity duration-300" />
           </Link>
 
-          {/* Right side icons */}
-          <div className="flex items-center gap-2">
-            {location.pathname !== "/" && (
-              <Link
-                to="/"
-                aria-label="Back Home"
-                className="flex h-12 w-12 items-center justify-center rounded-lg text-gold transition-all duration-300 hover:shadow-gold-glow"
-              >
-                <Home className="h-8 w-8" />
-              </Link>
-            )}
-            <LanguageToggle />
+          {/* Right side - JP logo, Home icon, hamburger */}
+          <div className="flex items-center gap-4">
+            <img
+              src={kpcLogoJp}
+              alt="京都パシフィックキャピタル"
+              className="h-14 md:h-16 lg:h-20 object-contain"
+            />
+            <Link
+              to="/"
+              aria-label="Home"
+              className="flex h-12 w-12 items-center justify-center rounded-lg text-gold transition-all duration-300 hover:opacity-80"
+            >
+              <Home className="h-7 w-7" />
+            </Link>
             <Button
               variant="ghost"
               aria-label={isMobileOpen ? (language === "jp" ? "メニューを閉じる" : "Close navigation menu") : (language === "jp" ? "メニューを開く" : "Open navigation menu")}
@@ -105,72 +87,26 @@ export const Navigation = () => {
         </div>
       </div>
 
-      {/* Menu Dropdown */}
+      {/* Menu Dropdown - compact, right-aligned */}
       <div
         className={cn(
-          "absolute top-full left-0 right-0 backdrop-blur-xl bg-background/80 transition-all duration-300 overflow-hidden shadow-silk",
-          isMobileOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
+          "absolute top-full right-0 w-auto min-w-[260px] mr-6 lg:mr-12 rounded-2xl backdrop-blur-xl bg-background/90 border border-white/10 transition-all duration-300 overflow-hidden shadow-silk",
+          isMobileOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 border-transparent"
         )}
       >
-        <div className="container mx-auto px-6 py-6">
-          {/* About Us: Level 1 expandable parent, does NOT navigate */}
-          <button
-            onClick={() => setIsAboutOpen(!isAboutOpen)}
-            className="flex items-center gap-2 w-full py-2 text-3xl md:text-4xl text-foreground/80 hover:text-gold transition-colors"
-          >
-            <span>{language === "jp" ? "会社概要" : "About Us"}</span>
-            <span className={cn("text-[8px] inline-block transition-transform duration-200", isAboutOpen ? "rotate-90" : "")}>►</span>
-          </button>
-
-          {/* Level 2 items */}
-          <div className={cn("pl-4 space-y-2 overflow-hidden transition-all duration-300", isAboutOpen ? "max-h-[40rem] opacity-100 mt-2" : "max-h-0 opacity-0")}>
-            <Link to="/founder" className="block py-2 text-2xl md:text-3xl text-foreground/60 hover:text-gold transition-colors">
-              {language === "jp" ? "創業者紹介" : "Founder"}
-            </Link>
-
-            {/* Experience: navigates to Experience page */}
-            <Link to="/experience" className="block py-2 text-2xl md:text-3xl text-foreground/60 hover:text-gold transition-colors">
-              {language === "jp" ? "投資実績" : "Experience"}
-            </Link>
-
-            {/* Case Studies: hidden for now, preserved for future use */}
-            <div className="hidden">
-              <div className="flex items-center gap-2 py-2">
-                <button
-                  onClick={() => setIsExperienceOpen(!isExperienceOpen)}
-                  className="text-foreground/60 hover:text-gold transition-colors"
-                >
-                  <span className={cn("text-[8px] inline-block transition-transform duration-200", isExperienceOpen ? "rotate-90" : "")}>►</span>
-                </button>
-              </div>
-              <div className={cn("pl-4 space-y-2 overflow-hidden transition-all duration-300", isExperienceOpen ? "max-h-[20rem] opacity-100 mt-1" : "max-h-0 opacity-0")}>
-                <div className="pl-4">
-                  <button
-                    onClick={() => setIsCaseStudiesOpen(!isCaseStudiesOpen)}
-                    className="flex items-center gap-2 w-full py-2 text-xl md:text-2xl text-foreground/50 hover:text-gold transition-colors"
-                  >
-                    <span>{language === "jp" ? "ケーススタディ" : "Case Studies"}</span>
-                    <span className={cn("text-[8px] inline-block transition-transform duration-200", isCaseStudiesOpen ? "rotate-90" : "")}>►</span>
-                  </button>
-                  <div className={cn("pl-4 space-y-2 overflow-hidden transition-all duration-300", isCaseStudiesOpen ? "max-h-40 opacity-100 mt-1" : "max-h-0 opacity-0")}>
-                    <Link to="/case-studies/usj" className="block py-2 text-lg md:text-xl text-foreground/40 hover:text-gold transition-colors">
-                      {language === "jp" ? "ユニバーサル・スタジオ・ジャパン" : "Universal Studios Japan"}
-                    </Link>
-                    <Link to="/case-studies/renew" className="block py-2 text-lg md:text-xl text-foreground/40 hover:text-gold transition-colors">
-                      {language === "jp" ? "リニュー・パワー" : "ReNew Power"}
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <Link to="/strategy" className="block py-2 text-2xl md:text-3xl text-foreground/60 hover:text-gold transition-colors">
-              {language === "jp" ? "投資戦略" : "Strategy"}
-            </Link>
-            <Link to="/contact" className="block py-2 text-2xl md:text-3xl text-foreground/60 hover:text-gold transition-colors">
-              {language === "jp" ? "お問い合わせ" : "Contact Us"}
-            </Link>
-          </div>
+        <div className="px-8 py-6 space-y-1">
+          <Link to="/founder" className="block py-2 text-xl md:text-2xl text-foreground/80 hover:text-gold transition-colors">
+            {language === "jp" ? "創業者紹介" : "Founder"}
+          </Link>
+          <Link to="/experience" className="block py-2 text-xl md:text-2xl text-foreground/80 hover:text-gold transition-colors">
+            {language === "jp" ? "投資実績" : "Investment Experience"}
+          </Link>
+          <Link to="/strategy" className="block py-2 text-xl md:text-2xl text-foreground/80 hover:text-gold transition-colors">
+            {language === "jp" ? "投資戦略" : "Strategy"}
+          </Link>
+          <Link to="/contact" className="block py-2 text-xl md:text-2xl text-foreground/80 hover:text-gold transition-colors">
+            {language === "jp" ? "お問い合わせ" : "Contact Us"}
+          </Link>
         </div>
       </div>
     </nav>

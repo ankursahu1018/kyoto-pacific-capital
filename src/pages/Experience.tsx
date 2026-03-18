@@ -245,7 +245,7 @@ const Experience = () => {
   return (
     <Layout>
       <SEO
-        title="Experience | Kyoto Pacific Capital"
+        title="Investment Experience | Kyoto Pacific Capital"
         description="Selected investments and operating experience across leading global companies."
         canonicalUrl="https://kyotopacific.com/experience"
       />
@@ -255,13 +255,13 @@ const Experience = () => {
           <div className="max-w-6xl mx-auto pt-20 md:pt-24">
             <div className="text-center mb-12">
               <h1 className="text-4xl md:text-5xl font-display font-light text-gold mb-3 animate-fade-up">
-                {isJp ? "投資実績" : "Experience"}
+                {isJp ? "投資実績" : "Investment Experience"}
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground animate-fade-up delay-100">
-                {isJp ? "主要投資先" : "Selected Investments"}
-              </p>
             </div>
             <StatsBar />
+            <p className="text-xl md:text-2xl text-muted-foreground text-center mb-12 animate-fade-up delay-100">
+              {isJp ? "主要投資先" : "Selected Investments"}
+            </p>
             <div className="space-y-12">
               {sections.map((section) => (
                 <div

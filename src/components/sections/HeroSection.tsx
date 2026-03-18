@@ -96,11 +96,11 @@ export const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 lg:px-12">
         <div className="max-w-5xl mx-auto flex min-h-screen flex-col items-center text-center pt-[35vh] pb-[8vh]">
           <h1 className="font-display font-light leading-none animate-fade-up cursor-default w-full text-center">
-            <span className="block text-gold text-[4rem] md:text-[5rem] lg:text-[5.5rem]">
+            <span className="block text-gold text-[2.2rem] md:text-[2.8rem] lg:text-[3rem]">
               {language === "jp" ? "パートナー のために" : "Partners for"}
             </span>
             <span
-              className={`block text-gold text-[2rem] md:text-[2.5rem] lg:text-[3rem] mt-2 transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+              className={`block text-gold text-[2.5rem] md:text-[3.2rem] lg:text-[3.8rem] mt-2 transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
                 }`}
               style={{
                 textShadow: "0 0 10px rgba(201, 168, 76, 0.45)",
@@ -111,12 +111,12 @@ export const HeroSection = () => {
           </h1>
 
           <div className="mt-auto mb-[4vh]">
-            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-200 transition-colors duration-300 hover:text-primary cursor-default">
+            <p className="pt-8 text-base md:text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto animate-fade-up delay-200 transition-colors duration-300 hover:text-primary cursor-default">
               {t("hero.subheadline")}
             </p>
 
             {/* CTA Button */}
-            <div className="mt-14 flex items-center justify-center animate-fade-up delay-300">
+            <div className="mt-20 flex items-center justify-center animate-fade-up delay-300">
               <Button
                 variant="heroOutline"
                 size="xl"

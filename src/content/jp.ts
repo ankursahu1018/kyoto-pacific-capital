@@ -15,7 +15,7 @@ export const content = {
     stats: {
       valueInvested: "投資総額",
       valueCreated: "創出価値",
-      yearsExperience: "投資経験",
+      yearsExperience: "年",
       billionOutcomes: "10億ドル超案件",
       grossMoic: "総合MOIC",
       grossIrr: "総合IRR",
@@ -249,7 +249,7 @@ export const content = {
     sending: "送信中...",
     emailLabel: "メール",
     officeLabel: "オフィス",
-    office: "東京",
+    office: "",
   },
   footer: {
     tagline: "先見性あるリーダーと共に、革新的なアイデアを世界を代表する企業へと育てます。共同創業者として、長期的なパートナーとして、共に歩みます。",

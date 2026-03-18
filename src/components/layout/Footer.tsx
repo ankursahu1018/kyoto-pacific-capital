@@ -31,7 +31,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               {[
                 { label: language === "jp" ? "創業者紹介" : "Founder", href: "/founder" },
-                { label: language === "jp" ? "投資実績" : "Experience", href: "/experience" },
+                { label: language === "jp" ? "投資実績" : "Investment Experience", href: "/experience" },
                 { label: language === "jp" ? "投資戦略" : "Strategy", href: "/strategy" },
                 { label: language === "jp" ? "お問い合わせ" : "Contact Us", href: "/contact" },
               ].map((link) => (
@@ -58,9 +58,6 @@ export const Footer = () => {
                 >
                   inquiries@kyotopacific.com
                 </a>
-              </li>
-              <li className="text-base text-muted-foreground">
-                {t("contact.office")}
               </li>
             </ul>
           </div>

@@ -8,14 +8,14 @@ export const content = {
   },
   hero: {
     headline: "Partners for Capital, Intelligent Growth, Globalisation, and Strategic Innovation",
-    subheadline: "We partner with visionary leaders to scale breakthrough ideas into preeminent global companies working side by side as co\u2011entrepreneurs and long-term allies",
+    subheadline: "We partner with visionary leaders to scale breakthrough ideas into preeminent global companies working side by side as co\u2011entrepreneurs for the long term",
     learnMore: "About Us",
   },
   home: {
     stats: {
       valueInvested: "Value Invested",
       valueCreated: "Value Created",
-      yearsExperience: "Years Investment Experience",
+      yearsExperience: "Years",
       billionOutcomes: "$1B+ Outcomes",
       grossMoic: "Gross MOIC",
       grossIrr: "Gross IRR",
@@ -249,10 +249,10 @@ export const content = {
     sending: "Sending...",
     emailLabel: "Email",
     officeLabel: "Office",
-    office: "Tokyo, Japan",
+    office: "",
   },
   footer: {
-    tagline: "We partner with visionary leaders to scale breakthrough ideas into preeminent global companies working side by side as co-entrepreneurs and long-term allies",
+    tagline: "We partner with visionary leaders to scale breakthrough ideas into preeminent global companies working side by side as co-entrepreneurs for the long term",
     quickLinks: "Quick Links",
     aboutUs: "About Us",
     portfolio: "Portfolio",

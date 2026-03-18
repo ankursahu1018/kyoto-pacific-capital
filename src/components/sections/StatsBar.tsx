@@ -114,6 +114,10 @@ export const StatsBar = () => {
 
   const stats = [
     {
+      value: "25+",
+      label: String(t("home.stats.yearsExperience")),
+    },
+    {
       value: "$4B+",
       label: String(t("home.stats.valueInvested")),
     },
@@ -122,11 +126,7 @@ export const StatsBar = () => {
       label: String(t("home.stats.valueCreated")),
     },
     {
-      value: "25+",
-      label: String(t("home.stats.yearsExperience")),
-    },
-    {
-      value: "Five",
+      value: "5",
       label: String(t("home.stats.billionOutcomes")),
       staticDisplay: true,
     },

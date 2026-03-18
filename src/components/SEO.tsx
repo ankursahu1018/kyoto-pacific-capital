@@ -123,7 +123,7 @@ const organizationSchema = {
 export const SEO = ({
   title,
   description,
-  keywords = "private equity, Japan, India, growth capital, digital transformation, Ankur Sahu, Goldman Sachs, buy and build, Asia investment",
+  keywords = "private equity Asia, Japan private equity, India private equity, growth equity Asia Pacific, long-term capital partners, co-entrepreneur investor, Goldman Sachs Asia, Japan investment firm, cross-border private equity, Tokyo private equity, transformation capital, founder-friendly investor, global private equity partner, renewable energy investment Asia, private equity Europe",
   canonicalUrl,
   ogImage = "https://kyotopacific.com/og-image.jpg",
   ogType = "website",
