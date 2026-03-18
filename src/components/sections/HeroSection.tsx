@@ -94,7 +94,7 @@ export const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-6 lg:px-12">
-        <div className="max-w-5xl mx-auto flex min-h-screen flex-col items-center text-center pt-[38vh] md:pt-[35vh] pb-[8vh]">
+        <div className="max-w-5xl mx-auto flex min-h-screen flex-col items-center text-center pt-[32vh] md:pt-[35vh] pb-[8vh]">
           <h1 className="font-display font-light leading-none animate-fade-up cursor-default w-full text-center">
             <span className="block text-gold text-[1.6rem] sm:text-[2rem] md:text-[2.8rem] lg:text-[3rem]">
               {language === "jp" ? "パートナー のために" : "Partners for"}
