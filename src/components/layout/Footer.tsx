@@ -30,7 +30,7 @@ export const Footer = () => {
             <h4 className="text-base font-medium text-foreground mb-4 tracking-wide">{t("footer.quickLinks")}</h4>
             <ul className="space-y-3">
               {[
-                { label: language === "jp" ? "創業者紹介" : "Founder", href: "/ankur-sahu" },
+                { label: language === "jp" ? "アンクール・サフ" : "Ankur Sahu", href: "/ankur-sahu" },
                 { label: language === "jp" ? "投資実績" : "Investment Experience", href: "/experience" },
                 { label: language === "jp" ? "投資戦略" : "Strategy", href: "/strategy" },
                 { label: language === "jp" ? "お問い合わせ" : "Contact Us", href: "/contact" },
@@ -57,6 +57,16 @@ export const Footer = () => {
                   className="text-base text-muted-foreground hover:text-gold transition-colors duration-300"
                 >
                   inquiries@kyotopacific.com
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/ankur-sahu-9b30157a/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-base text-muted-foreground hover:text-gold transition-colors duration-300"
+                >
+                  LinkedIn
                 </a>
               </li>
             </ul>

@@ -96,7 +96,7 @@ export const Navigation = () => {
       >
         <div className="px-6 py-4 md:px-8 md:py-6 space-y-1">
           <Link to="/ankur-sahu" className="block py-2 text-lg md:text-2xl text-foreground/80 hover:text-gold transition-colors">
-            {language === "jp" ? "創業者紹介" : "Founder"}
+            {language === "jp" ? "アンクール・サフ" : "Ankur Sahu"}
           </Link>
           <Link to="/experience" className="block py-2 text-lg md:text-2xl text-foreground/80 hover:text-gold transition-colors">
             {language === "jp" ? "投資実績" : "Investment Experience"}
