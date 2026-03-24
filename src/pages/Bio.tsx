@@ -29,7 +29,7 @@ const Bio = () => {
                 <div className="w-full h-full rounded-full overflow-hidden">
                   <img
                     src={ankurPhoto}
-                    alt="Ankur Sahu - Founder & Managing Partner"
+                    alt="Ankur Sahu Founder and Managing Partner Kyoto Pacific Capital"
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
                   />

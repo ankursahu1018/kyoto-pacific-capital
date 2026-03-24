@@ -8,7 +8,7 @@ export const content = {
   },
   hero: {
     headline: "Partners for Capital, Intelligent Growth, Globalisation, and Strategic Innovation",
-    subheadline: "We partner with visionary leaders to scale breakthrough ideas into preeminent global companies working side by side as co\u2011entrepreneurs for the long term",
+    subheadline: "We partner with visionary leaders to scale breakthrough ideas into global companies working side by side as co\u2011entrepreneurs for the long term",
     learnMore: "About Us",
   },
   home: {
@@ -22,7 +22,7 @@ export const content = {
     },
     briefIntro: {
       kicker: "Buy & Build",
-      text: "We partner with exceptional management teams to create leading companies in attractive sectors. Our approach focuses on long-term growth through transformation, not financial engineering.",
+      text: "We partner with management teams to build companies in attractive sectors. Our approach focuses on long-term growth through transformation, not financial engineering.",
       cta: "Our Strategy",
     },
     featuredInvestments: {
@@ -129,7 +129,7 @@ export const content = {
       renew: {
         name: "ReNew Power",
         tag: "Renewables",
-        description: "Created India's largest and one of the world's top 15 independent renewable energy companies. 10+ GW contracted capacity.",
+        description: "Created India's largest independent renewable energy company. 10+ GW contracted capacity.",
         outcome: "NASDAQ Listed",
       },
       jre: {
@@ -153,7 +153,7 @@ export const content = {
       antuit: {
         name: "Antuit.ai",
         tag: "Technology",
-        description: "Built a leader in AI-powered analytics solutions for demand forecasting and supply chain optimization.",
+        description: "Built an AI-powered analytics firm for demand forecasting and supply chain optimization.",
         outcome: "Acquired by Zebra Technologies",
       },
     },
@@ -162,7 +162,7 @@ export const content = {
   },
   contactPage: {
     title: "Let's Talk",
-    subtitle: "We're always interested in meeting exceptional founders and management teams.",
+    subtitle: "We're always interested in meeting founders and management teams.",
     email: "Email",
     offices: "Offices",
     officeLocations: "Japan • India",
@@ -183,10 +183,10 @@ export const content = {
     successDescription: "We'll get back to you within 2 business days.",
   },
   intro: {
-    headline: "We partner with exceptional founders and management teams across Japan and India to build enduring businesses.",
+    headline: "We partner with founders and management teams across Japan and India to build enduring businesses.",
     growth: {
       title: "Growth",
-      description: "Partnering with exceptional businesses to accelerate their growth trajectory through strategic capital and operational expertise.",
+      description: "Partnering with businesses to accelerate their growth trajectory through strategic capital and operational expertise.",
     },
     globalisation: {
       title: "Globalisation",
@@ -200,7 +200,7 @@ export const content = {
   story: {
     title: "Our Story",
     letterTitle: "A Letter from Our Founder",
-    paragraph1: "After two decades at Goldman Sachs, helping build and lead the private equity business across Asia, I started Kyoto Pacific Capital with a simple idea: exceptional businesses deserve more than just capital. They deserve partners who think like entrepreneurs.",
+    paragraph1: "After two decades at Goldman Sachs, helping build and lead the private equity business across Asia, I started Kyoto Pacific Capital with a simple idea: businesses deserve more than just capital. They deserve partners who think like entrepreneurs.",
     paragraph2: "At KPC, we work alongside founders and leadership teams to scale great companies. We do this by combining hands-on support, deep market knowledge, and the intelligent use of technology, especially where digital transformation is needed most.",
     paragraph3: "Our focus is Asia, particularly Japan and India. But our ambition is global. We help businesses grow in their home markets and beyond, because we've seen that the right mix of local trust and global perspective can create enduring impact.",
     paragraph4: "Thank you for your interest. We welcome thoughtful, values-aligned conversations, with founders, families, and fellow investors alike.",
@@ -209,7 +209,7 @@ export const content = {
   },
   strategy: {
     title: "Investment Strategy",
-    subtitle: "Flexible capital meets focused expertise, tailored to the unique needs of each exceptional opportunity.",
+    subtitle: "Flexible capital meets focused expertise, tailored to the unique needs of each opportunity.",
     stages: {
       title: "Investment Stages",
       description: "We invest across the growth spectrum, from seed through buyout, adapting our approach to match each opportunity's unique requirements.",
@@ -228,7 +228,7 @@ export const content = {
   },
   portfolio: {
     title: "Portfolio",
-    subtitle: "A selection of the exceptional businesses we've had the privilege to partner with.",
+    subtitle: "A selection of the businesses we've had the privilege to partner with.",
     all: "All Investments",
     current: "Current",
     past: "Past",
@@ -252,7 +252,7 @@ export const content = {
     office: "",
   },
   footer: {
-    tagline: "We partner with visionary leaders to scale breakthrough ideas into preeminent global companies working side by side as co-entrepreneurs for the long term",
+    tagline: "We partner with visionary leaders to scale breakthrough ideas into global companies working side by side as co-entrepreneurs for the long term",
     quickLinks: "Quick Links",
     aboutUs: "About Us",
     portfolio: "Portfolio",

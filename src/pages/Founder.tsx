@@ -19,20 +19,21 @@ const Founder = () => {
     ];
 
     const enParagraphs = [
-        "Ankur Sahu is the Founder and Managing Partner of Kyoto Pacific Capital, where he partners with founders, owners, and management teams at moments of growth, transition, and strategic inflection. His work focuses on building leading businesses by combining long-term capital with active engagement and disciplined strategic and financial judgment.",
+        "Ankur Sahu is the Founder and Managing Partner of Kyoto Pacific Capital, where he partners with founders, owners, and management teams at moments of growth, transition, and strategic inflection. His work focuses on building businesses by combining long-term capital with active engagement and disciplined strategic and financial judgment.",
         "Ankur brings over three decades of investment and operating experience, with a particular focus on Japan, India, and the United States. Prior to founding Kyoto Pacific Capital, he served as Co-Head of Private Equity for Asia-Pacific at Goldman Sachs. During his tenure, he was a member of the firm's Global Investment Committee, Risk Committee, and Asia-Pacific Management Committee. He joined Goldman Sachs in 1998, was named Managing Director in 2005, and became a Partner in 2006.",
         "Over the course of his career, Ankur led investments totaling over $4 billion across 30+ companies. He oversaw some of Asia's most pioneering transactions, working closely with management teams as a long-term partner and co-entrepreneur, operating shoulder-to-shoulder with founders and management rather than simply as a financial investor. Collectively, these investments generated over $12 billion in realized shareholder value, including five multi-billion-dollar outcomes: Universal Studios Japan (USJ), Sanyo Electric, eAccess, ReNew Power, and Japan Renewable Energy.",
-        "At USJ, Ankur played a central role over a 13-year period, serving as lead director representing the majority shareholder through a multi-phase transformation. He drove major strategic and operational decisions, led the IPO, take-private, and recapitalization transactions, recruited key members of the senior management team, led the $450M+ Harry Potter investment, and negotiated the final sale to Comcast. During this time, annual visitors more than doubled from 7.5 million to over 15 million, EBITDA increased more than fivefold, and the investment ultimately generated a multi-billion-dollar return. The USJ transaction is widely regarded as one of the most successful private equity outcomes in Asia and among Goldman Sachs' top-performing global investments.",
+        "At USJ, Ankur played a central role over a 13-year period, serving as lead director representing the majority shareholder through a multi-phase transformation. He drove major strategic and operational decisions, led the IPO, take-private, and recapitalization transactions, recruited key members of the senior management team, led the $450M+ Harry Potter investment, and negotiated the final sale to Comcast. During this time, annual visitors more than doubled from 7.5 million to over 15 million, EBITDA increased more than fivefold, and the investment ultimately generated a multi-billion-dollar return. The USJ transaction is widely regarded as one of the most successful private equity outcomes in Asia and among Goldman Sachs' most notable global investments.",
         "Earlier in his career, Ankur worked at Panasonic in Japan, where he held roles in semiconductor design and product/business development. This experience continues to shape his approach to technology (hardware and software), manufacturing, and cross-cultural execution.",
         "Ankur holds an MBA from Harvard Business School and a B.S. in Electrical Engineering (summa cum laude) from Tufts University. He currently serves on the Board of Sega Sammy Holdings Co. Ltd. and the Board of Trustees of Tufts University, where he chairs the Audit, Risk, and Compliance Committee.",
-        "He is fluent in English, Japanese, and Hindi, and conversational in French. A member of YPO (Japan and Paris chapters) since 2007, Ankur also serves on the board of Dasra, a leading strategic philanthropy platform in India. He lives and works globally, and remains deeply engaged with entrepreneurs, business leaders, and institutions across Asia, Europe, and the United States.",
+        "He is fluent in English, Japanese, and Hindi, and conversational in French. A member of YPO (Japan and Paris chapters) since 2007, Ankur also serves on the board of Dasra, a strategic philanthropy platform in India. He lives and works globally, and remains deeply engaged with entrepreneurs, business leaders, and institutions across Asia, Europe, and the United States.",
     ];
     return (
         <Layout>
             <SEO
-                title="Founder & Managing Partner | Kyoto Pacific Capital"
-                description="Founder and Managing Partner profile for Kyoto Pacific Capital."
-                canonicalUrl="https://kyotopacific.com/founder"
+                title="Ankur Sahu | Founder & Managing Partner | Kyoto Pacific Capital"
+                description="Ankur Sahu is the Founder and Managing Partner of Kyoto Pacific Capital. Former Co-Head of Private Equity Asia-Pacific at Goldman Sachs."
+                canonicalUrl="https://kyotopacific.com/ankur-sahu"
+                includePersonSchema={true}
             />
 
             <section className="pb-16 md:pb-24 min-h-screen pt-24 md:pt-36">
@@ -53,7 +54,7 @@ const Founder = () => {
                                     <div className="w-full h-full rounded-2xl overflow-hidden border border-gold/30 bg-[hsl(248,39%,20%)]/80">
                                         <img
                                             src={ankurPhoto}
-                                            alt="Ankur Sahu - Founder & Managing Partner of Kyoto Pacific Capital"
+                                            alt="Ankur Sahu Founder and Managing Partner Kyoto Pacific Capital"
                                             loading="lazy"
                                             className="w-full h-full object-cover contrast-[1.15] saturate-[1.1] brightness-[0.95]"
                                         />

@@ -2,6 +2,7 @@ import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { StatsBar } from "@/components/sections/StatsBar";
+import { Link } from "react-router-dom";
 import maxIndiaLogo from "@/assets/logo-max-hospitals-india.png";
 import seagateLogo from "@/assets/logo-seagate.png";
 import usjLogo from "@/assets/logo-UniversalStudiosJapan.png";
@@ -246,7 +247,7 @@ const Experience = () => {
     <Layout>
       <SEO
         title="Investment Experience | Kyoto Pacific Capital"
-        description="Selected investments and operating experience across leading global companies."
+        description="Selected investments and operating experience across global companies."
         canonicalUrl="https://kyotopacific.com/experience"
       />
 
@@ -305,7 +306,7 @@ const Experience = () => {
                                 <div className="h-20 md:h-24 transition-transform duration-300 group-hover:scale-110 group-hover:shadow-gold-glow">
                                   <img
                                     src={company.logo}
-                                    alt={`${isJp ? company.jpName : company.name} logo`}
+                                    alt={company.name === "Universal Studios Japan" ? "Universal Studios Japan investment Kyoto Pacific Capital" : `${isJp ? company.jpName : company.name} logo`}
                                     loading="lazy"
                                     className={`h-full w-full object-contain ${isRenewPower
                                       ? "p-[6px]"
@@ -363,8 +364,8 @@ const Experience = () => {
                 </p>
                 <p className="transition-colors duration-300 hover:text-gold">
                   {isJp
-                    ? "ゴールドマン・サックスまたはKPCのリード投資担当、個人投資家、取締役、戦略アドバイザーとしてアンクール・サフが関与した投資先を含みます。"
-                    : "Includes investments where Ankur Sahu served as lead investor representative for Goldman Sachs or KPC, personal investor, board director, or strategic advisor."}
+                    ? <>ゴールドマン・サックスまたはKPCのリード投資担当、個人投資家、取締役、戦略アドバイザーとして<Link to="/ankur-sahu" className="text-gold hover:underline">アンクール・サフ</Link>が関与した投資先を含みます。</>
+                    : <>Includes investments where <Link to="/ankur-sahu" className="text-gold hover:underline">Ankur Sahu</Link> served as lead investor representative for Goldman Sachs or KPC, personal investor, board director, or strategic advisor.</>}
                 </p>
               </div>
             </div>

@@ -55,7 +55,7 @@ const faqSchema = {
       name: "What is Kyoto Pacific Capital?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Kyoto Pacific Capital is a private equity firm focused on Japan and India, founded by Ankur Sahu, former Co-Head of Private Equity Asia-Pacific at Goldman Sachs. The firm partners with exceptional management teams to create leading companies through long-term growth strategies."
+        text: "Kyoto Pacific Capital is a private equity firm focused on Japan and India, founded by Ankur Sahu, former Co-Head of Private Equity Asia-Pacific at Goldman Sachs. The firm partners with management teams to build companies through long-term growth strategies."
       }
     },
     {
@@ -98,7 +98,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "Kyoto Pacific Capital",
   description: "Private equity firm focused on Japan and India, founded by former Goldman Sachs Partner Ankur Sahu",
-  url: "https://kyotopacific.com",
+  url: "https://www.kyotopacific.com",
   foundingDate: "2018",
   founder: {
     "@type": "Person",

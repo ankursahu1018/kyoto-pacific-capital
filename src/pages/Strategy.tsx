@@ -2,6 +2,13 @@ import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { useLanguage } from "@/contexts/LanguageContext";
 
+const sectors = [
+  { en: "Technology & Business Services", jp: "テクノロジー＆ビジネスサービス", enDesc: "Semiconductors, AI, digital infrastructure, and technology-enabled business services", jpDesc: "半導体、AI、デジタルインフラ、テクノロジー対応ビジネスサービス" },
+  { en: "Sustainability", jp: "サステナビリティ", enDesc: "Renewable energy and impact-focused sectors", jpDesc: "再生可能エネルギーとインパクト重視セクター" },
+  { en: "Healthcare", jp: "ヘルスケア", enDesc: "Healthcare services and pharmaceuticals", jpDesc: "医療サービスと製薬" },
+  { en: "Consumer", jp: "消費財", enDesc: "Consumer brands and services", jpDesc: "消費者ブランドとサービス" },
+];
+
 const Strategy = () => {
   const { language } = useLanguage();
   const isJp = language === "jp";
@@ -19,7 +26,7 @@ const Strategy = () => {
       "Businesses at an inflection point: new product launches, rapid scaling, new market entry, or undergoing transformation",
       "Products and services with demonstrated market demand and a defensible competitive position",
       "Opportunities with relevance across our core geographies: Japan, India, the United States, and Europe",
-      "The potential to build preeminent companies",
+      "The potential to build enduring companies",
     ];
 
   const howWeWork = isJp
@@ -42,7 +49,7 @@ const Strategy = () => {
     <Layout>
       <SEO
         title="Our Strategy | Kyoto Pacific Capital"
-        description="We back exceptional founders building global businesses with flexible capital, strategic insight, and hands-on partnership."
+        description="We back founders building global businesses with flexible capital, strategic insight, and hands-on partnership."
         canonicalUrl="https://kyotopacific.com/strategy"
       />
 
@@ -94,6 +101,29 @@ const Strategy = () => {
                   >
                     <span className="mt-2 h-2 w-2 rounded-full bg-gold shadow-gold-glow flex-shrink-0" />
                     <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Section 3 - Sectors */}
+            <div className="rounded-3xl border border-white/10 bg-card/60 p-5 md:p-10 shadow-silk transition-all duration-300 hover:shadow-gold-glow-lg hover:border-gold/30 animate-fade-up delay-200">
+              <h2 className="text-2xl md:text-3xl font-display font-light text-gold mb-6">
+                {isJp ? "対象セクター" : "Sectors"}
+              </h2>
+              <ul className="space-y-4">
+                {sectors.map((sector, index) => (
+                  <li
+                    key={sector.en}
+                    className="flex items-start gap-3 md:gap-4 text-base md:text-xl text-muted-foreground leading-relaxed"
+                    style={{ animationDelay: `${index * 80}ms` }}
+                  >
+                    <span className="mt-2 h-2 w-2 rounded-full bg-gold shadow-gold-glow flex-shrink-0" />
+                    <span>
+                      <strong className="text-foreground">{isJp ? sector.jp : sector.en}</strong>
+                      {" — "}
+                      {isJp ? sector.jpDesc : sector.enDesc}
+                    </span>
                   </li>
                 ))}
               </ul>

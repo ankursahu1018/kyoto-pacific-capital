@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Link } from "react-router-dom";
 import usjLogo from "@/assets/logo-UniversalStudiosJapan.png";
 
 const overview = [
@@ -22,7 +23,11 @@ const metrics = [
   { label: "Visitors", jpLabel: "来場者数", before: "8M", jpBefore: "800万人", after: "15M", jpAfter: "1,500万人" },
 ];
 
-const valueSummary = "Over a 13-year partnership, Ankur served as lead director representing the majority shareholder through a multi-phase transformation. The team recruited key management, led the $450M+ Harry Potter investment, negotiated with NBC Universal and Warner Brothers, and drove all major strategic and operational decisions. The exit to Comcast at approximately $8 billion enterprise value, representing a 10x increase, created over $7 billion in total shareholder value.";
+const valueSummaryParts = {
+  before: "Over a 13-year partnership, ",
+  name: "Ankur Sahu",
+  after: " served as lead director representing the majority shareholder through a multi-phase transformation. The team recruited key management, led the $450M+ Harry Potter investment, negotiated with NBC Universal and Warner Brothers, and drove all major strategic and operational decisions. The exit to Comcast at approximately $8 billion enterprise value, representing a 10x increase, created over $7 billion in total shareholder value.",
+};
 const jpValueSummary = "13年にわたるパートナーシップを通じ、アンクルは過半数株主を代表するリードディレクターとして、多段階の変革を主導。主要経営陣の採用、4億5,000万ドル超のハリー・ポッター投資の主導、NBCユニバーサルおよびワーナー・ブラザーズとの交渉、そしてすべての主要な戦略的・事業的意思決定を推進した。コムキャストへの約80億ドルのエンタープライズバリューでのエグジットは、約10倍の増加を示し、株主全体で70億ドル超の価値を創出した。";
 
 const UniversalStudiosJapan = () => {
@@ -45,7 +50,7 @@ const UniversalStudiosJapan = () => {
               <div className="mx-auto w-40 md:w-48 h-24 md:h-28 mb-6">
                 <img
                   src={usjLogo}
-                  alt={isJp ? "ユニバーサル・スタジオ・ジャパン ロゴ" : "Universal Studios Japan logo"}
+                  alt="Universal Studios Japan investment Kyoto Pacific Capital"
                   loading="lazy"
                   className="h-full w-full object-contain"
                 />
@@ -112,7 +117,7 @@ const UniversalStudiosJapan = () => {
                 ))}
               </div>
               <p className="text-xl text-muted-foreground leading-relaxed">
-                {isJp ? jpValueSummary : valueSummary}
+                {isJp ? jpValueSummary : <>{valueSummaryParts.before}<Link to="/ankur-sahu" className="text-gold hover:underline">{valueSummaryParts.name}</Link>{valueSummaryParts.after}</>}
               </p>
             </div>
           </div>

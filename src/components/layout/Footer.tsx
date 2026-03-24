@@ -17,7 +17,7 @@ export const Footer = () => {
                   京都<br />パシフィック<br />キャピタル
                 </span>
               ) : (
-                <img src={kpcLogoEn} alt="Kyoto Pacific Capital logo" loading="lazy" className="h-10" />
+                <img src={kpcLogoEn} alt="Kyoto Pacific Capital global investment platform" loading="lazy" className="h-10" />
               )}
             </Link>
             <p className="mt-4 text-base text-muted-foreground leading-relaxed max-w-md">
@@ -30,7 +30,7 @@ export const Footer = () => {
             <h4 className="text-base font-medium text-foreground mb-4 tracking-wide">{t("footer.quickLinks")}</h4>
             <ul className="space-y-3">
               {[
-                { label: language === "jp" ? "創業者紹介" : "Founder", href: "/founder" },
+                { label: language === "jp" ? "創業者紹介" : "Founder", href: "/ankur-sahu" },
                 { label: language === "jp" ? "投資実績" : "Investment Experience", href: "/experience" },
                 { label: language === "jp" ? "投資戦略" : "Strategy", href: "/strategy" },
                 { label: language === "jp" ? "お問い合わせ" : "Contact Us", href: "/contact" },

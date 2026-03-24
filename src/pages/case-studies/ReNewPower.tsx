@@ -23,8 +23,8 @@ const metrics = [
   { label: "Capacity", jpLabel: "発電容量", before: "0 GW", jpBefore: "0 GW", after: "10 GW", jpAfter: "10 GW" },
 ];
 
-const valueSummary = "Built from three employees to over 500 staff, growing ReNew into India's largest independent power producer with approximately 10 GW in contracted renewable energy capacity. Established global standard governance structures and policies covering compliance, FCPA, risk management, vendor selection, and investment committee processes. Raised approximately $1 billion in equity from world-class investors including CPPIB, ADIA, JERA, and ADB at accretive valuations, plus over $5 billion in debt financing. Led major acquisitions including the $1 billion plus purchase of Ostro Energy, one of the largest M&A transactions in India's renewable sector. Successfully listed on NASDAQ with equity value exceeding $4 billion.";
-const jpValueSummary = "従業員3名から500名超の組織へと成長させ、リニュー・パワーをインド最大の独立系発電事業者に育成し、再生可能エネルギーの契約容量は約10GWに達した。コンプライアンス、FCPA、リスク管理、ベンダー選定、投資委員会プロセスを網羅するグローバル基準のガバナンス体制と方針を構築。CPPIB、ADIA、JERA、ADBなど世界的な投資家から約10億ドルの株式を有利なバリュエーションで調達し、50億ドル超の債務ファイナンスを実施。インドの再生可能エネルギーセクター最大級のM&Aの一つであるオストロ・エナジーの10億ドル超の買収を主導。NASDAQに上場し、株式価値は40億ドルを超えた。";
+const valueSummary = "Built from three employees to over 500 staff, growing ReNew into India's largest independent power producer with approximately 10 GW in contracted renewable energy capacity. Established global standard governance structures and policies covering compliance, FCPA, risk management, vendor selection, and investment committee processes. Raised approximately $1 billion in equity from institutional investors including CPPIB, ADIA, JERA, and ADB at accretive valuations, plus over $5 billion in debt financing. Led major acquisitions including the $1 billion plus purchase of Ostro Energy, one of the largest M&A transactions in India's renewable sector. Successfully listed on NASDAQ with equity value exceeding $4 billion.";
+const jpValueSummary = "従業員3名から500名超の組織へと成長させ、リニュー・パワーをインド最大の独立系発電事業者に育成し、再生可能エネルギーの契約容量は約10GWに達した。コンプライアンス、FCPA、リスク管理、ベンダー選定、投資委員会プロセスを網羅するグローバル基準のガバナンス体制と方針を構築。CPPIB、ADIA、JERA、ADBなど機関投資家から約10億ドルの株式を有利なバリュエーションで調達し、50億ドル超の債務ファイナンスを実施。インドの再生可能エネルギーセクター最大級のM&Aの一つであるオストロ・エナジーの10億ドル超の買収を主導。NASDAQに上場し、株式価値は40億ドルを超えた。";
 
 const ReNewPower = () => {
   const { language } = useLanguage();
@@ -34,7 +34,7 @@ const ReNewPower = () => {
     <Layout>
       <SEO
         title={isJp ? "リニュー・パワー | 京都パシフィックキャピタル" : "ReNew Power | Kyoto Pacific Capital"}
-        description={isJp ? "インド最大かつ世界トップ10の独立系再生可能エネルギー企業の創出" : "Creation of India's largest and world's Top 10 independent Renewable Energy company"}
+        description={isJp ? "インド最大の独立系再生可能エネルギー企業の創出" : "Creation of India's largest independent renewable energy company"}
         canonicalUrl="https://www.kyotopacific.com/case-studies/renew"
       />
 
@@ -55,7 +55,7 @@ const ReNewPower = () => {
                 {isJp ? "リニュー・パワー" : "ReNew Power"}
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground animate-fade-up delay-100">
-                {isJp ? "インド最大かつ世界トップ10の独立系再生可能エネルギー企業の創出" : "Creation of India's largest and world's Top 10 independent Renewable Energy company"}
+                {isJp ? "インド最大の独立系再生可能エネルギー企業の創出" : "Creation of India's largest independent renewable energy company"}
               </p>
             </div>
 

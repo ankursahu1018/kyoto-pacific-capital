@@ -2,11 +2,10 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import Bio from "./pages/Bio";
 import Company from "@/pages/Company";
 import Founder from "./pages/Founder";
 import Experience from "./pages/Experience";
@@ -29,10 +28,12 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/bio" element={<Bio />} />
+          <Route path="/ankur-sahu" element={<Founder />} />
+          <Route path="/founder" element={<Navigate to="/ankur-sahu" replace />} />
+          <Route path="/bio" element={<Navigate to="/ankur-sahu" replace />} />
           <Route path="/company" element={<Company />} />
-          <Route path="/founder" element={<Founder />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/investment-experience" element={<Experience />} />
           <Route path="/case-studies/usj" element={<UniversalStudiosJapan />} />
           <Route path="/case-studies/renew" element={<ReNewPower />} />
           <Route path="/strategy" element={<Strategy />} />

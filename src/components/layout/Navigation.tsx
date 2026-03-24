@@ -54,7 +54,7 @@ export const Navigation = () => {
             to="/"
             className="flex flex-col group flex-shrink-0"
           >
-            <img src={kpcLogoEn} alt="Kyoto Pacific Capital logo" loading="lazy" className="h-14 md:h-24 lg:h-28 group-hover:opacity-80 transition-opacity duration-300" />
+            <img src={kpcLogoEn} alt="Kyoto Pacific Capital global investment platform" loading="lazy" className="h-14 md:h-24 lg:h-28 group-hover:opacity-80 transition-opacity duration-300" />
           </Link>
 
           {/* Right side - JP logo + Home (hidden on mobile), hamburger always */}
@@ -95,7 +95,7 @@ export const Navigation = () => {
         )}
       >
         <div className="px-6 py-4 md:px-8 md:py-6 space-y-1">
-          <Link to="/founder" className="block py-2 text-lg md:text-2xl text-foreground/80 hover:text-gold transition-colors">
+          <Link to="/ankur-sahu" className="block py-2 text-lg md:text-2xl text-foreground/80 hover:text-gold transition-colors">
             {language === "jp" ? "創業者紹介" : "Founder"}
           </Link>
           <Link to="/experience" className="block py-2 text-lg md:text-2xl text-foreground/80 hover:text-gold transition-colors">

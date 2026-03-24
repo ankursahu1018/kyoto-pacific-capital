@@ -30,7 +30,7 @@ const Contact = () => {
               <p className="text-base md:text-2xl text-muted-foreground leading-relaxed mt-4">
                 {isJp
                   ? "グローバルなビジョンを持ち、類まれな事業を構築・変革されている方で、私たちがお力になれるとお考えでしたら、ぜひご連絡ください。"
-                  : "If you're building or transforming something extraordinary with a global vision, and believe we can help, we'd love to hear from you."}
+                  : "If you're building or transforming a business with a global vision, and believe we can help, we'd welcome a conversation."}
               </p>
 
               <div className="mt-8 md:mt-10 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-gold">

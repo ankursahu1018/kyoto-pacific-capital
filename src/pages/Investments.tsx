@@ -1,6 +1,7 @@
 import { Layout } from "@/components/layout/Layout";
 import { SEO } from "@/components/SEO";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { Link } from "react-router-dom";
 
 type InvestmentItem = {
   name: string;
@@ -127,7 +128,7 @@ const Investments = () => {
           </div>
 
           <p className="mt-8 text-xs text-muted-foreground/70 max-w-4xl">
-            Includes investments where Ankur Sahu served as lead investor representative
+            Includes investments where <Link to="/ankur-sahu" className="text-gold hover:underline">Ankur Sahu</Link> served as lead investor representative
             for Goldman Sachs or KPC, personal investor, board director, or strategic advisor.
           </p>
         </div>

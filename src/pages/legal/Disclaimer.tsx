@@ -1,5 +1,6 @@
 import { Layout } from "@/components/layout/Layout";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Link } from "react-router-dom";
 
 const Disclaimer = () => {
   const { language } = useLanguage();
@@ -40,7 +41,7 @@ const Disclaimer = () => {
                       投資実績と過去のパフォーマンス
                     </h2>
                     <p className="mb-4">
-                      本ウェブサイトに記載されている投資実績には、アンクール・サフがゴールドマン・サックス在籍中（1998年〜2018年）に行った投資、および京都パシフィック・キャピタルを通じて行った投資が含まれます。これらの投資は、異なる立場、異なる組織体制およびマンデートの下で行われたものです。これらの投資の過去の実績は、京都パシフィック・キャピタルまたはそのファンドや投資の将来のパフォーマンスを必ずしも示すものではありません。
+                      本ウェブサイトに記載されている投資実績には、<Link to="/ankur-sahu" className="text-gold hover:underline">アンクール・サフ</Link>がゴールドマン・サックス在籍中（1998年〜2018年）に行った投資、および京都パシフィック・キャピタルを通じて行った投資が含まれます。これらの投資は、異なる立場、異なる組織体制およびマンデートの下で行われたものです。これらの投資の過去の実績は、京都パシフィック・キャピタルまたはそのファンドや投資の将来のパフォーマンスを必ずしも示すものではありません。
                     </p>
                     <p>
                       過去の実績は将来の成果を示すものではありません。過去のリターン、期待リターン、または確率予測は、実際の将来のパフォーマンスを反映しない場合があります。京都パシフィック・キャピタルが同等の成果を達成できる保証、または目標リターンが達成される保証はありません。実際の実現リターンは、本資料に示されたリターンと大きく異なる場合があります。
@@ -130,7 +131,7 @@ const Disclaimer = () => {
                       Track Record and Past Performance
                     </h2>
                     <p className="mb-4">
-                      The investment track record presented on this website includes investments made during Ankur Sahu's tenure at Goldman Sachs (1998-2018) as well as investments made through Kyoto Pacific Capital. These investments were made in different capacities and under different organizational structures and mandates. Past results of these investments are not necessarily indicative of future performance of Kyoto Pacific Capital or any of its funds or investments.
+                      The investment track record presented on this website includes investments made during <Link to="/ankur-sahu" className="text-gold hover:underline">Ankur Sahu</Link>'s tenure at Goldman Sachs (1998-2018) as well as investments made through Kyoto Pacific Capital. These investments were made in different capacities and under different organizational structures and mandates. Past results of these investments are not necessarily indicative of future performance of Kyoto Pacific Capital or any of its funds or investments.
                     </p>
                     <p>
                       Past performance is not indicative of future results. Any historical returns, expected returns, or probability projections may not reflect actual future performance. There is no guarantee that Kyoto Pacific Capital will achieve comparable results or that target returns will be met. Actual realized returns may differ materially from those presented.
