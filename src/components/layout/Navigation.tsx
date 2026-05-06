@@ -4,6 +4,7 @@ import { Menu, X, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 import { useLanguage } from "@/contexts/LanguageContext";
+import { LanguageToggle } from "@/components/ui/LanguageToggle";
 import { cn } from "@/lib/utils";
 import kpcLogoJp from "@/assets/kpc-logo-jp-gold.png";
 import kpcLogoEn from "@/assets/kpc-logo-jp.png";
@@ -71,6 +72,7 @@ export const Navigation = () => {
             >
               <Home className="h-7 w-7" />
             </Link>
+            <LanguageToggle />
             <Button
               variant="ghost"
               aria-label={isMobileOpen ? (language === "jp" ? "メニューを閉じる" : "Close navigation menu") : (language === "jp" ? "メニューを開く" : "Open navigation menu")}
@@ -96,7 +98,7 @@ export const Navigation = () => {
       >
         <div className="px-6 py-4 md:px-8 md:py-6 space-y-1">
           <Link to="/ankur-sahu" className="block py-2 text-lg md:text-2xl text-foreground/80 hover:text-gold transition-colors">
-            {language === "jp" ? "アンクール・サフ" : "Ankur Sahu"}
+            {language === "jp" ? "創業者紹介" : "Ankur Sahu"}
           </Link>
           <Link to="/experience" className="block py-2 text-lg md:text-2xl text-foreground/80 hover:text-gold transition-colors">
             {language === "jp" ? "投資実績" : "Investment Experience"}

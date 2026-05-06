@@ -27,14 +27,21 @@ const contentMap = {
   jp: jpContent,
 };
 
+const STORAGE_KEY = "kpc-language";
+
+const readStoredLanguage = (): Language => {
+  if (typeof window === "undefined") return "en";
+  const stored = window.localStorage.getItem(STORAGE_KEY);
+  return stored === "jp" ? "jp" : "en";
+};
+
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  // Force EN until JP launch - localStorage check disabled
-  const [language, setLanguageState] = useState<Language>("en");
+  const [language, setLanguageState] = useState<Language>(readStoredLanguage);
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
     if (typeof window !== "undefined") {
-      localStorage.setItem("kpc-language", lang);
+      window.localStorage.setItem(STORAGE_KEY, lang);
     }
   };
 

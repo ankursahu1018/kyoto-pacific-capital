@@ -24,12 +24,12 @@ const Contact = () => {
             <div className="rounded-3xl border border-white/10 bg-card/60 p-5 md:p-10 shadow-silk transition-all duration-300 hover:shadow-gold-glow-lg hover:border-gold/30 animate-fade-up delay-100">
               <p className="text-base md:text-2xl text-muted-foreground leading-relaxed">
                 {isJp
-                  ? "私たちは、支援先・協業先を厳選しています。しかし、一度パートナーとなれば、全力を尽くしてコミットします。"
+                  ? "投資先およびパートナーは厳選しておりますが、一度ご一緒する際には、全力でコミットします。"
                   : "We're selective about who we back and work with, but fully committed once we do."}
               </p>
               <p className="text-base md:text-2xl text-muted-foreground leading-relaxed mt-4">
                 {isJp
-                  ? "グローバルなビジョンを持ち、類まれな事業を構築・変革されている方で、私たちがお力になれるとお考えでしたら、ぜひご連絡ください。"
+                  ? "グローバルな視点で事業の構築や変革に取り組まれている方で、当社がお役に立てるとお考えの方は、ぜひご連絡ください。"
                   : "If you're building or transforming a business with a global vision, and believe we can help, we'd welcome a conversation."}
               </p>
 

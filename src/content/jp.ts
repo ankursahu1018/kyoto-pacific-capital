@@ -8,14 +8,14 @@ export const content = {
   },
   hero: {
     headline: "資本、インテリジェント成長、グローバル化、戦略的イノベーションのためのパートナー",
-    subheadline: "先見性あるリーダーと共に、革新的なアイデアを世界を代表する企業へと育てます。共同創業者として、長期的なパートナーとして、共に歩みます。",
+    subheadline: "先見性あるリーダーと共に、革新的なアイデアを世界を代表する企業へと育てていきます。共同起業家として、長期的な視点で伴走します。",
     learnMore: "会社概要",
   },
   home: {
     stats: {
       valueInvested: "投資総額",
-      valueCreated: "創出価値",
-      yearsExperience: "年",
+      valueCreated: "創出した株主価値",
+      yearsExperience: "投資実績年数",
       billionOutcomes: "10億ドル超案件",
       grossMoic: "総合MOIC",
       grossIrr: "総合IRR",
@@ -252,12 +252,12 @@ export const content = {
     office: "",
   },
   footer: {
-    tagline: "先見性あるリーダーと共に、革新的なアイデアを世界を代表する企業へと育てます。共同創業者として、長期的なパートナーとして、共に歩みます。",
+    tagline: "先見性あるリーダーと共に、革新的なアイデアを世界を代表する企業へと育てていきます。",
     quickLinks: "クイックリンク",
     aboutUs: "会社概要",
     portfolio: "投資先",
     contact: "お問い合わせ",
-    copyright: "京都パシフィックキャピタル 無断複写・転載を禁じます。",
+    copyright: "京都パシフィックキャピタル 無断複写・転載を禁じます",
   },
   backToHome: "ホームに戻る",
 };

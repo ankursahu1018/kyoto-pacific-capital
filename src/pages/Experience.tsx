@@ -25,6 +25,11 @@ import mercariLogo from "@/assets/logo-mercari.png";
 import airweaveLogo from "@/assets/logo-airweave.png";
 import familiarLogo from "@/assets/logo-familiar.png";
 import juchheimLogo from "@/assets/logo-juchheim.png";
+import thriveCapitalLogo from "@/assets/logo-thrivecapital.png";
+import cyberArkLogo from "@/assets/logo-cyberark.png";
+import optorunLogo from "@/assets/logo-optorun.png";
+import anthropicLogo from "@/assets/logo-anthropic.png";
+import revolutLogo from "@/assets/logo-revolut.png";
 
 type Country = "Japan" | "India" | "United States" | "Europe";
 
@@ -127,9 +132,9 @@ const sections: Section[] = [
   },
   {
     title: "Greenfield Ventures",
-    jpTitle: "グリーンフィールド・ベンチャー",
+    jpTitle: "グリーンフィールド投資",
     description: "Built from scratch or near-zero base",
-    jpDescription: "ゼロまたはゼロに近い状態からの立ち上げ",
+    jpDescription: "ゼロまたはそれに近い状態からの立ち上げ",
     companies: [
       {
         name: "Cyfirma",
@@ -178,10 +183,10 @@ const sections: Section[] = [
   },
   {
     title: "Growth Partnerships",
-    jpTitle: "グロース・パートナーシップ",
+    jpTitle: "グロース投資",
     description:
       "Strategic venture/growth capital, regional expansion, early stage innovation",
-    jpDescription: "戦略的ベンチャー・グロースキャピタル、地域展開、初期段階イノベーション",
+    jpDescription: "成長資本、地域展開、戦略的成長支援",
     companies: [
       {
         name: "Airweave",
@@ -192,6 +197,14 @@ const sections: Section[] = [
         cardClassName: "bg-white",
       },
       {
+        name: "Anthropic",
+        jpName: "アンソロピック",
+        country: "United States",
+        current: true,
+        logo: anthropicLogo,
+        cardClassName: "bg-white",
+      },
+      {
         name: "antuit.ai",
         jpName: "アンテュイットAI",
         country: "United States",
@@ -199,11 +212,12 @@ const sections: Section[] = [
         cardClassName: "bg-white",
       },
       {
-        name: "Cyfirma",
-        jpName: "サイファーマ",
-        country: "Japan",
-        logo: cyfirmaLogo,
-        cardClassName: "bg-[#0A0A1A]",
+        name: "CyberArk",
+        jpName: "サイバーアーク",
+        country: "United States",
+        current: true,
+        logo: cyberArkLogo,
+        cardClassName: "bg-white",
       },
       {
         name: "Familiar",
@@ -229,10 +243,34 @@ const sections: Section[] = [
         cardClassName: "bg-black",
       },
       {
+        name: "Optorun",
+        jpName: "オプトラン",
+        country: "Japan",
+        current: true,
+        logo: optorunLogo,
+        cardClassName: "bg-white",
+      },
+      {
         name: "Recruit",
         jpName: "リクルート",
         country: "Japan",
         logo: recruitLogo,
+        cardClassName: "bg-white",
+      },
+      {
+        name: "Revolut",
+        jpName: "レボリュート",
+        country: "Europe",
+        current: true,
+        logo: revolutLogo,
+        cardClassName: "bg-white",
+      },
+      {
+        name: "Thrive Capital",
+        jpName: "スライブ・キャピタル",
+        country: "United States",
+        current: true,
+        logo: thriveCapitalLogo,
         cardClassName: "bg-white",
       },
     ],
@@ -261,7 +299,7 @@ const Experience = () => {
             </div>
             <StatsBar />
             <p className="text-xl md:text-2xl text-muted-foreground text-center mb-12 animate-fade-up delay-100">
-              {isJp ? "主要投資先" : "Selected Investments"}
+              {isJp ? "主要投資実績" : "Selected Investments"}
             </p>
             <div className="space-y-12">
               {sections.map((section) => (
@@ -364,7 +402,7 @@ const Experience = () => {
                 </p>
                 <p className="transition-colors duration-300 hover:text-gold">
                   {isJp
-                    ? <>ゴールドマン・サックスまたはKPCのリード投資担当、個人投資家、取締役、戦略アドバイザーとして<Link to="/ankur-sahu" className="text-gold hover:underline">アンクール・サフ</Link>が関与した投資先を含みます。</>
+                    ? <>ゴールドマン・サックスまたはKPCにおいて、リード投資担当、個人投資家、取締役、戦略アドバイザーとして<Link to="/ankur-sahu" className="text-gold hover:underline">アンクール・サフ</Link>が関与した投資を含みます。</>
                     : <>Includes investments where <Link to="/ankur-sahu" className="text-gold hover:underline">Ankur Sahu</Link> served as lead investor representative for Goldman Sachs or KPC, personal investor, board director, or strategic advisor.</>}
                 </p>
               </div>

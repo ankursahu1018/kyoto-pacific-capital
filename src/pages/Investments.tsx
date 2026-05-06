@@ -56,14 +56,18 @@ const sections: Section[] = [
     subtitle:
       "Strategic venture/growth capital, regional expansion, early stage innovation",
     items: [
-      { name: "NetScaler", country: "United States" },
-      { name: "antuit.ai", country: "United States" },
-      { name: "Cyfirma", country: "Japan" },
-      { name: "Recruit", country: "Japan" },
-      { name: "Mercari", country: "Japan" },
       { name: "Airweave", country: "Japan", current: true },
+      { name: "Anthropic", country: "United States", current: true },
+      { name: "antuit.ai", country: "United States" },
+      { name: "CyberArk", country: "United States", current: true },
       { name: "Familiar", country: "Japan", current: true },
       { name: "Juchheim", country: "Japan", current: true },
+      { name: "Mercari", country: "Japan" },
+      { name: "NetScaler", country: "United States" },
+      { name: "Optorun", country: "Japan", current: true },
+      { name: "Recruit", country: "Japan" },
+      { name: "Revolut", country: "Europe", current: true },
+      { name: "Thrive Capital", country: "United States", current: true },
     ],
   },
 ];

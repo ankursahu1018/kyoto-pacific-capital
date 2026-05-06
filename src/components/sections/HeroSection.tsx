@@ -13,7 +13,7 @@ export const HeroSection = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   const rotatingWords = language === "jp"
-    ? ["長期的資本形成", "戦略的成長", "グローバル展開", "技術革新"]
+    ? ["グローバル展開", "戦略的成長", "長期的資本", "テクノロジー"]
     : [
       "Long Term Capital",
       "Strategic Growth",
@@ -96,18 +96,37 @@ export const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 lg:px-12">
         <div className="max-w-5xl mx-auto flex min-h-screen flex-col items-center text-center pt-[38vh] md:pt-[35vh] pb-[8vh]">
           <h1 className="font-display font-light leading-none animate-fade-up cursor-default w-full text-center">
-            <span className="block text-gold text-[1.6rem] sm:text-[2rem] md:text-[2.8rem] lg:text-[3rem]">
-              {language === "jp" ? "パートナー のために" : "Partners for"}
-            </span>
-            <span
-              className={`block text-gold text-[1.8rem] sm:text-[2.2rem] md:text-[3.2rem] lg:text-[3.8rem] mt-2 transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
-                }`}
-              style={{
-                textShadow: "0 0 10px rgba(201, 168, 76, 0.45)",
-              }}
-            >
-              {rotatingWords[currentIndex]}
-            </span>
+            {language === "jp" ? (
+              <>
+                <span
+                  className={`block text-gold text-[1.8rem] sm:text-[2.2rem] md:text-[3.2rem] lg:text-[3.8rem] transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+                    }`}
+                  style={{
+                    textShadow: "0 0 10px rgba(201, 168, 76, 0.45)",
+                  }}
+                >
+                  {rotatingWords[currentIndex]}
+                </span>
+                <span className="block text-gold text-[1.6rem] sm:text-[2rem] md:text-[2.8rem] lg:text-[3rem] mt-2">
+                  のパートナー
+                </span>
+              </>
+            ) : (
+              <>
+                <span className="block text-gold text-[1.6rem] sm:text-[2rem] md:text-[2.8rem] lg:text-[3rem]">
+                  Partners for
+                </span>
+                <span
+                  className={`block text-gold text-[1.8rem] sm:text-[2.2rem] md:text-[3.2rem] lg:text-[3.8rem] mt-2 transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
+                    }`}
+                  style={{
+                    textShadow: "0 0 10px rgba(201, 168, 76, 0.45)",
+                  }}
+                >
+                  {rotatingWords[currentIndex]}
+                </span>
+              </>
+            )}
           </h1>
 
           <div className="mt-auto mb-[4vh]">

@@ -3,10 +3,10 @@ import { SEO } from "@/components/SEO";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const sectors = [
-  { en: "Technology & Business Services", jp: "テクノロジー＆ビジネスサービス", enDesc: "Semiconductors, AI, digital infrastructure, and technology-enabled business services", jpDesc: "半導体、AI、デジタルインフラ、テクノロジー対応ビジネスサービス" },
-  { en: "Sustainability", jp: "サステナビリティ", enDesc: "Renewable energy and impact-focused sectors", jpDesc: "再生可能エネルギーとインパクト重視セクター" },
+  { en: "Tech", jp: "テック", enDesc: "Semiconductors, AI, digital infrastructure, and technology-enabled business services", jpDesc: "半導体、AI、デジタルインフラ、テクノロジー対応ビジネスサービス" },
+  { en: "Consumer", jp: "コンシューマー", enDesc: "Consumer brands and services", jpDesc: "消費者ブランドとサービス" },
   { en: "Healthcare", jp: "ヘルスケア", enDesc: "Healthcare services and pharmaceuticals", jpDesc: "医療サービスと製薬" },
-  { en: "Consumer", jp: "消費財", enDesc: "Consumer brands and services", jpDesc: "消費者ブランドとサービス" },
+  { en: "Impact", jp: "インパクト", enDesc: "Sustainability focused sectors, including renewable energy", jpDesc: "再生可能エネルギーを含むサステナビリティ重視セクター" },
 ];
 
 const Strategy = () => {
@@ -16,26 +16,26 @@ const Strategy = () => {
   const whatWeLookFor = isJp
     ? [
       "深い専門知識と明確な成長ビジョンを持つ創業者・経営チーム",
-      "転換期にある企業: 新製品投入、急速な規模拡大、新市場参入、または事業変革の最中にある企業",
-      "実証された市場需要と防御可能な競争優位性を持つ製品・サービス",
-      "日本、インド、米国、欧州を中心とするコア地域に関連する投資機会",
-      "業界を代表する卓越した企業を構築するポテンシャル",
+      "転換期にある企業（新製品投入、規模拡大、新市場参入、事業変革）",
+      "実証された市場需要と持続可能な競争優位性",
+      "日本、インド、米国、欧州に関連する投資機会",
+      "業界を代表する企業を構築するポテンシャル",
     ]
     : [
-      "Founders and management teams with deep domain expertise and a clear vision for growth",
+      "Founders and management teams with deep domain expertise, a clear vision and unique value proposition",
       "Businesses at an inflection point: new product launches, rapid scaling, new market entry, or undergoing transformation",
-      "Products and services with demonstrated market demand and a defensible competitive position",
+      "Products and services with large potential market demand and a defensible competitive position",
       "Opportunities with relevance across our core geographies: Japan, India, the United States, and Europe",
-      "The potential to build enduring companies",
+      "Potential to build a strong and profitable leading company",
     ];
 
   const howWeWork = isJp
     ? [
-      "長期的視点で取り組みます: パートナーシップは10年以上に及ぶことも多くあります",
-      "経営チームと「共同起業家」として直接協働し、受動的または純粋な財務投資家としてではなく、アクティブなパートナーとして関与します",
-      "資本提供に加え、戦略立案、財務規律、人材獲得、グローバルネットワーク、リスク管理といった事業運営能力を提供します",
-      "豊富な経験を持つエグゼクティブや機関投資家のネットワークを活用し、ポートフォリオ企業の事業運営・資金調達ニーズを支援します",
-      "財務工学や短期的リターンではなく、規律ある実行を通じた持続的な価値創造に注力します",
+      "長期的な視点で取り組みます",
+      "経営チームと共同起業家として協働し、主体的に関与します",
+      "資本に加え、戦略・財務・人材・ネットワークを提供します",
+      "グローバルなネットワークを活用し事業展開を支援します",
+      "短期的なリターンではなく持続的な価値創造に注力します",
     ]
     : [
       "We take a long-term view: our partnerships often span a decade or more",
@@ -62,7 +62,7 @@ const Strategy = () => {
             </h1>
             <p className="text-base md:text-2xl text-muted-foreground leading-relaxed animate-fade-up delay-100">
               {isJp
-                ? "ビジョンと情熱を持つ創業者・リーダーが率い、優れたプロダクトマーケットフィットとグローバルな成長可能性を備えた企業に投資し、資本、事業運営の経験、戦略的知見を組み合わせて長期的な成長を加速させます。"
+                ? "明確なビジョンを持つ創業者・リーダーが率いる企業に対し、優れたプロダクト・マーケット・フィットとグローバルな成長可能性を見極め、資本、事業運営の経験、戦略的知見を組み合わせて長期的な成長を支援します。"
                 : "We invest in businesses led by visionary founders and passionate leaders with strong product-market fit and global potential. We combine capital, operating experience, and strategic insight to accelerate long-term growth."}
             </p>
           </div>
@@ -90,7 +90,7 @@ const Strategy = () => {
             {/* Section 2 */}
             <div className="rounded-3xl border border-white/10 bg-card/60 p-5 md:p-10 shadow-silk transition-all duration-300 hover:shadow-gold-glow-lg hover:border-gold/30 animate-fade-up delay-100">
               <h2 className="text-2xl md:text-3xl font-display font-light text-gold mb-6">
-                {isJp ? "パートナーシップのあり方" : "How We Partner"}
+                {isJp ? "投資アプローチ" : "How We Partner"}
               </h2>
               <ul className="space-y-4">
                 {howWeWork.map((item, index) => (
