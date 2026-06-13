@@ -50,12 +50,13 @@ export const Navigation = () => {
     >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex items-center justify-between h-20 md:h-28">
-          {/* Logo - EN only, unchanged */}
+          {/* Logo - EN always; JP stacked underneath on mobile (shown on desktop in the right cluster) */}
           <Link
             to="/"
             className="flex flex-col group flex-shrink-0"
           >
-            <img src={kpcLogoEn} alt="Kyoto Pacific Capital global investment platform" loading="lazy" className="h-14 md:h-24 lg:h-28 group-hover:opacity-80 transition-opacity duration-300" />
+            <img src={kpcLogoEn} alt="Kyoto Pacific Capital global investment platform" loading="lazy" className="h-12 md:h-24 lg:h-28 group-hover:opacity-80 transition-opacity duration-300" />
+            <img src={kpcLogoJp} alt="京都パシフィックキャピタル" className="block md:hidden h-5 mt-1 object-contain self-start group-hover:opacity-80 transition-opacity duration-300" />
           </Link>
 
           {/* Right side - JP logo + Home (hidden on mobile), hamburger always */}
