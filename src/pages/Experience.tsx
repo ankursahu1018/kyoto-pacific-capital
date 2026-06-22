@@ -30,6 +30,7 @@ import cyberArkLogo from "@/assets/logo-cyberark.png";
 import optorunLogo from "@/assets/logo-optorun.png";
 import anthropicLogo from "@/assets/logo-anthropic.png";
 import revolutLogo from "@/assets/logo-revolut.png";
+import cravanLogo from "@/assets/logo-cravan.png";
 
 type Country = "Japan" | "India" | "United States" | "Europe";
 
@@ -212,6 +213,14 @@ const sections: Section[] = [
         cardClassName: "bg-white",
       },
       {
+        name: "CRAVAN",
+        jpName: "クラヴァン",
+        country: "Europe",
+        current: true,
+        logo: cravanLogo,
+        cardClassName: "bg-white",
+      },
+      {
         name: "CyberArk",
         jpName: "サイバーアーク",
         country: "United States",
@@ -246,7 +255,6 @@ const sections: Section[] = [
         name: "Optorun",
         jpName: "オプトラン",
         country: "Japan",
-        current: true,
         logo: optorunLogo,
         cardClassName: "bg-white",
       },

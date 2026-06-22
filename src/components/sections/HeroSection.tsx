@@ -69,10 +69,16 @@ export const HeroSection = () => {
         }
       `}</style>
 
-      {/* Background Image */}
+      {/* Background Image - desktop (unchanged per-language logic) */}
       <div
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat hidden md:block"
         style={{ backgroundImage: `url(${heroBg})` }}
+      />
+
+      {/* Background Image - mobile only: always uses the JP background (EN mobile matches JP) */}
+      <div
+        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat block md:hidden"
+        style={{ backgroundImage: `url(${heroBgJp})` }}
       />
 
       {/* Purple overlay */}
