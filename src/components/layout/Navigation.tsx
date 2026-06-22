@@ -98,6 +98,10 @@ export const Navigation = () => {
         )}
       >
         <div className="px-6 py-4 md:px-8 md:py-6 space-y-1">
+          <Link to="/" className="flex items-center gap-2 py-2 text-lg md:text-2xl text-foreground/80 hover:text-gold transition-colors">
+            <Home className="h-5 w-5 md:h-6 md:w-6" />
+            {language === "jp" ? "ホーム" : "Home"}
+          </Link>
           <Link to="/ankur-sahu" className="block py-2 text-lg md:text-2xl text-foreground/80 hover:text-gold transition-colors">
             {language === "jp" ? "創業者紹介" : "Ankur Sahu"}
           </Link>
