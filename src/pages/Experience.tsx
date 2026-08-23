@@ -31,6 +31,7 @@ import optorunLogo from "@/assets/logo-optorun.png";
 import anthropicLogo from "@/assets/logo-anthropic.png";
 import revolutLogo from "@/assets/logo-revolut.png";
 import cravanLogo from "@/assets/logo-cravan.png";
+import datalakeLogo from "@/assets/logo-datalake.png";
 
 type Country = "Japan" | "India" | "United States" | "Europe";
 
@@ -226,6 +227,14 @@ const sections: Section[] = [
         country: "United States",
         current: true,
         logo: cyberArkLogo,
+        cardClassName: "bg-white",
+      },
+      {
+        name: "Datalake",
+        jpName: "データレイク",
+        country: "Europe",
+        current: true,
+        logo: datalakeLogo,
         cardClassName: "bg-white",
       },
       {
