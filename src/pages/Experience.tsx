@@ -232,7 +232,7 @@ const sections: Section[] = [
       {
         name: "Dataland",
         jpName: "データランド",
-        country: "Europe",
+        country: "United States",
         current: true,
         logo: datalandLogo,
         cardClassName: "bg-white",
