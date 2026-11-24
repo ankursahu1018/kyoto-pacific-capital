@@ -53,10 +53,10 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="mailto:inquiries@kyotopacific.com"
+                  href="mailto:as@kyotopacific.com"
                   className="text-base text-muted-foreground hover:text-gold transition-colors duration-300"
                 >
-                  inquiries@kyotopacific.com
+                  as@kyotopacific.com
                 </a>
               </li>
               <li>

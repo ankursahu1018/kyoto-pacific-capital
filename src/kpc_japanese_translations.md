@@ -171,7 +171,7 @@ USJでは、13年間にわたり中心的な役割を担い、筆頭株主を代
 
 **Section 5: お問い合わせ**
 本プライバシーポリシーに関するご質問は、下記までお問い合わせください。
-メールアドレス：inquiries@kyotopacific.com
+メールアドレス：as@kyotopacific.com
 
 ---
 
@@ -201,7 +201,7 @@ USJでは、13年間にわたり中心的な役割を担い、筆頭株主を代
 
 **Section 6: お問い合わせ**
 本利用規約に関するご質問は、下記までお問い合わせください。
-メールアドレス：inquiries@kyotopacific.com
+メールアドレス：as@kyotopacific.com
 
 ---
 
@@ -233,7 +233,7 @@ USJでは、13年間にわたり中心的な役割を担い、筆頭株主を代
 
 **Contact:**
 本免責事項に関するご質問は、下記までお問い合わせください。
-メールアドレス：inquiries@kyotopacific.com
+メールアドレス：as@kyotopacific.com
 
 ---
 

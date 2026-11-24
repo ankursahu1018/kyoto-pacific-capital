@@ -71,7 +71,7 @@ const Privacy = () => {
                     <p>
                       本プライバシーポリシーに関するご質問は、下記までお問い合わせください。
                     </p>
-                    <p className="mt-2">メールアドレス：inquiries@kyotopacific.com</p>
+                    <p className="mt-2">メールアドレス：as@kyotopacific.com</p>
                   </section>
                 </div>
               </>
@@ -182,7 +182,7 @@ const Privacy = () => {
                     </p>
                     <div className="mt-4 p-4 bg-card/50 rounded-lg">
                       <p><strong className="text-foreground">Kyoto Pacific Capital</strong></p>
-                      <p>Email: inquiries@kyotopacific.com</p>
+                      <p>Email: as@kyotopacific.com</p>
                     </div>
                   </section>
                 </div>
