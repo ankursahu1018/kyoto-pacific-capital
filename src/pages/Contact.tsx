@@ -41,10 +41,10 @@ const Contact = () => {
                   </span>
                 </div>
                 <a
-                  href="mailto:inquiries@kyotopacific.com"
+                  href="mailto:as@kyotopacific.com"
                   className="text-base md:text-lg font-medium hover:text-gold-light transition-colors break-all sm:break-normal"
                 >
-                  inquiries@kyotopacific.com
+                  as@kyotopacific.com
                 </a>
               </div>
             </div>
