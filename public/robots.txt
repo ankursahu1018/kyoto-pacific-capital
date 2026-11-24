@@ -1,37 +1,48 @@
 # Kyoto Pacific Capital - robots.txt
+# Last reviewed: 2026-11-24
 
-# Allow all search engines
+# Default: all search engines and agents not named below
 User-agent: *
 Allow: /
 
-# Google
+# Search engines
 User-agent: Googlebot
 Allow: /
 
-# Bing
 User-agent: Bingbot
 Allow: /
 
-# AI Crawlers - Allow for AI search visibility
+# AI agents, kind 1: collect pages to train future models
 User-agent: GPTBot
 Allow: /
 
-User-agent: ChatGPT-User
-Allow: /
-
-User-agent: Claude-Web
-Allow: /
-
-User-agent: Anthropic-AI
-Allow: /
-
-User-agent: PerplexityBot
+User-agent: ClaudeBot
 Allow: /
 
 User-agent: Google-Extended
 Allow: /
 
-# Social Media
+# AI agents, kind 2: index pages so AI search can cite the firm
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# AI agents, kind 3: read a page when a person asks an AI assistant
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Social media previews
 User-agent: Twitterbot
 Allow: /
 
